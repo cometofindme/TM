@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun May 10 22:08:57 2026
+# Process ID: 35976
+# Current directory: E:/tm_Dronfa_xy/TM
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent36132 E:\tm_Dronfa_xy\TM\CTM.xpr
+# Log file: E:/tm_Dronfa_xy/TM/vivado.log
+# Journal file: E:/tm_Dronfa_xy/TM\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/tm_Dronfa_xy/TM/CTM.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file 'E:/tm_Dronfa_xy/ctm/component.xml'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vivado/program/CTM_ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado/install/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 770.852 ; gain = 170.230
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun May 10 22:10:26 2026...

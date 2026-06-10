@@ -1,0 +1,17 @@
+# 彻底锁死 Vivado 的仿真和临时大文件
+*.wdb
+*.coe
+*.sim/
+*.ip_user_files/
+
+# 锁定 Python 训练出来的庞大模型文件
+*.pkl
+
+# 排除答辩用的超大 emf 图片或临时图表
+结果/数据预处理/ai宋体/
+*.emf
+
+# Python 基础缓存
+__pycache__/
+*.pyc
+venv/

@@ -1,0 +1,36 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri May 22 22:35:19 2026
+# Process ID: 31408
+# Current directory: E:/tm_Dronfa_xy/TM
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent31224 E:\tm_Dronfa_xy\TM\CTM.xpr
+# Log file: E:/tm_Dronfa_xy/TM/vivado.log
+# Journal file: E:/tm_Dronfa_xy/TM\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/tm_Dronfa_xy/TM/CTM.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file 'E:/tm_Dronfa_xy/ctm/component.xml'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vivado/program/CTM_ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado/install/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 781.457 ; gain = 180.809
+update_compile_order -fileset sources_1
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+open_bd_design {E:/tm_Dronfa_xy/TM/CTM.srcs/sources_1/bd/design_1/design_1.bd}
+Adding cell -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_50M
+Adding cell -- xilinx.com:ip:blk_mem_gen:8.4 - blk_mem_gen_0
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- xilinx.com:user:tm_axi_wrapper:1.0 - tm_axi_wrapper_0
+Successfully read diagram <design_1> from BD file <E:/tm_Dronfa_xy/TM/CTM.srcs/sources_1/bd/design_1/design_1.bd>
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat May 23 00:10:21 2026...

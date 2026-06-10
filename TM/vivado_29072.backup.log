@@ -1,0 +1,1096 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun May 10 14:14:24 2026
+# Process ID: 29072
+# Current directory: E:/tm_Dronfa_xy/TM
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent29836 E:\tm_Dronfa_xy\TM\CTM.xpr
+# Log file: E:/tm_Dronfa_xy/TM/vivado.log
+# Journal file: E:/tm_Dronfa_xy/TM\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/tm_Dronfa_xy/TM/CTM.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file 'E:/tm_Dronfa_xy/ctm/component.xml'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vivado/program/CTM_ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado/install/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:11 . Memory (MB): peak = 806.102 ; gain = 169.434
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/tm_Dronfa_xy/TM/CTM.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/vivado/install/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'E:/tm_Dronfa_xy/TM/CTM.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_tm_top' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/tm_Dronfa_xy/TM/CTM.sim/sim_1/behav/xsim/blk_mem_masks_64bits.mif'
+INFO: [SIM-utils-43] Exported 'E:/tm_Dronfa_xy/TM/CTM.sim/sim_1/behav/xsim/tm_masks_init.coe'
+INFO: [SIM-utils-43] Exported 'E:/tm_Dronfa_xy/TM/CTM.sim/sim_1/behav/xsim/design_1_blk_mem_gen_0_0.mif'
+INFO: [SIM-utils-43] Exported 'E:/tm_Dronfa_xy/TM/CTM.sim/sim_1/behav/xsim/all_masks.coe'
+INFO: [SIM-utils-43] Exported 'E:/tm_Dronfa_xy/TM/CTM.sim/sim_1/behav/xsim/all_masks.coe'
+INFO: [SIM-utils-43] Exported 'E:/tm_Dronfa_xy/TM/CTM.sim/sim_1/behav/xsim/tm_masks_init.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/tm_Dronfa_xy/TM/CTM.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L axi_vip_v1_1_4 -L processing_system7_vip_v1_0_6 -L xilinx_vip -prj tb_tm_top_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/tm_Dronfa_xy/TM/CTM.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado/install/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 7d79f566f09d4d059c6f6b5b4cc57ef4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_tm_top_behav xil_defaultlib.tb_tm_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/tm_Dronfa_xy/TM/CTM.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_tm_top_behav -key {Behavioral:sim_1:Functional:tb_tm_top} -tclbatch {tb_tm_top.tcl} -protoinst "protoinst_files/design_1.protoinst" -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/design_1.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/design_1.protoinst for the following reason(s):
+There are no instances of module "design_1" in the design.
+
+Time resolution is 1 ps
+source tb_tm_top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+WARNING: [Wavedata 42-489] Can't add object "/tb_tm_top/fake_bram" to the wave window because it has 3840000 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+WARNING: [Wavedata 42-489] Can't add object "/tb_tm_top/test_features" to the wave window because it has 128000 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+# run 1000ns
+
+========================================
+? 启动 10 分类自动化批量测试，共 500 个样本
+========================================
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_tm_top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 1048.824 ; gain = 0.000
+run all
+ [Sample 00] True: 4 | Pred: 4 | Match! 
+    -> Scores: [-106, -186, -437, -183, 198, -172, -101, -178, -193, -222]
+ [Sample 01] True: 1 | Pred: 1 | Match! 
+    -> Scores: [-195, 97, 62, -176, -237, -301, -186, -223, -300, -297]
+ [Sample 02] True: 3 | Pred: 3 | Match! 
+    -> Scores: [-220, -134, -294, 146, -184, -181, -146, -192, -237, -249]
+ [Sample 03] True: 9 | Pred: 9 | Match! 
+    -> Scores: [-165, -150, -310, -138, -173, -223, -118, -170, -219, 258]
+ [Sample 04] True: 0 | Pred: 0 | Match! 
+    -> Scores: [280, -187, -258, -185, -162, -174, -98, -225, -233, -215]
+ [Sample 05] True: 4 | Pred: 4 | Match! 
+    -> Scores: [-224, -204, -300, -213, 177, -163, -127, -187, -304, -356]
+ [Sample 06] True: 1 | Pred: 2 | FAIL!  
+    -> Scores: [-221, -41, 199, -135, -240, -255, -171, -205, -342, -290]
+ [Sample 07] True: 0 | Pred: 0 | Match! 
+    -> Scores: [29, -76, -244, -107, -186, -251, -147, -90, -177, -306]
+ [Sample 08] True: 3 | Pred: 3 | Match! 
+    -> Scores: [-244, -181, -250, 296, -129, -198, -172, -226, -249, -297]
+ [Sample 09] True: 0 | Pred: 0 | Match! 
+    -> Scores: [288, -188, -260, -169, -180, -178, -108, -218, -241, -226]
+ [Sample 10] True: 4 | Pred: 4 | Match! 
+    -> Scores: [-154, -190, -294, -227, 215, -202, -101, -163, -280, -357]
+ [Sample 11] True: 2 | Pred: 2 | Match! 
+    -> Scores: [-135, 59, 63, -145, -212, -307, -226, -253, -345, -290]
+ [Sample 12] True: 0 | Pred: 0 | Match! 
+    -> Scores: [222, -181, -265, -201, -181, -214, -130, -148, -244, -241]
+ [Sample 13] True: 3 | Pred: 3 | Match! 
+    -> Scores: [-178, -98, -262, 315, -225, -181, -166, -159, -251, -230]
+ [Sample 14] True: 4 | Pred: 0 | FAIL!  
+    -> Scores: [-62, -176, -285, -123, -62, -92, -110, -182, -213, -86]
+ [Sample 15] True: 0 | Pred: 0 | Match! 
+    -> Scores: [143, -188, -306, -112, -150, -199, -149, -199, -209, -280]
+ [Sample 16] True: 2 | Pred: 2 | Match! 
+    -> Scores: [-150, -68, 152, -197, -259, -309, -56, -190, -242, -353]
+ [Sample 17] True: 3 | Pred: 3 | Match! 
+    -> Scores: [-95, -94, -259, 165, -209, -209, -143, -155, -248, -224]
+ [Sample 18] True: 4 | Pred: 4 | Match! 
+    -> Scores: [-69, -161, -135, -202, 143, -206, -178, -204, -295, -339]
+ [Sample 19] True: 8 | Pred: 6 | FAIL!  
+    -> Scores: [-174, -200, -273, -196, -161, -276, 0, -280, -61, -302]
+ [Sample 20] True: 8 | Pred: 8 | Match! 
+    -> Scores: [-192, -74, -266, -205, -439, -271, -317, -170, 263, -340]
+ [Sample 21] True: 9 | Pred: 9 | Match! 
+    -> Scores: [-61, -143, -301, -105, -194, -225, -127, -171, -177, 99]
+ [Sample 22] True: 0 | Pred: 0 | Match! 
+    -> Scores: [232, -192, -256, -190, -167, -173, -93, -222, -233, -211]
+ [Sample 23] True: 0 | Pred: 0 | Match! 
+    -> Scores: [267, -188, -298, -175, -177, -198, -118, -199, -227, -248]
+ [Sample 24] True: 2 | Pred: 2 | Match! 
+    -> Scores: [-233, -113, 145, -182, -195, -249, -184, -223, -251, -272]
+ [Sample 25] True: 3 | Pred: 3 | Match! 
+    -> Scores: [-187, -102, -270, 158, -190, -249, -145, -152, -244, -279]
+ [Sample 26] True: 5 | Pred: 5 | Match! 
+    -> Scores: [-155, -162, -273, -126, -78, 164, -157, -189, -228, -297]
+ [Sample 27] True: 1 | Pred: 1 | Match! 
+    -> Scores: [-126, 32, -102, -207, -193, -262, -156, -289, -246, -297]
+ [Sample 28] True: 0 | Pred: 0 | Match! 
+    -> Scores: [98, -140, -195, -94, -198, -234, -119, -160, -247, -331]
+ [Sample 29] True: 2 | Pred: 2 | Match! 
+    -> Scores: [-182, 96, 203, -143, -209, -250, -39, -218, -293, -318]
+ [Sample 30] True: 3 | Pred: 3 | Match! 
+    -> Scores: [-80, -110, -198, 105, -218, -183, -136, -166, -223, -192]
+ [Sample 31] True: 3 | Pred: 3 | Match! 
+    -> Scores: [-188, -140, -219, 208, -186, -178, -141, -239, -255, -239]
+ [Sample 32] True: 5 | Pred: 5 | Match! 
+    -> Scores: [-241, -154, -242, -65, -170, 177, -202, -147, -210, -231]
+ [Sample 33] True: 3 | Pred: 3 | Match! 
+    -> Scores: [-261, -182, -227, 210, -215, -169, -193, -173, -200, -212]
+ [Sample 34] True: 1 | Pred: 1 | Match! 
+    -> Scores: [-165, 82, -90, -164, -215, -289, -199, -271, -129, -355]
+ [Sample 35] True: 1 | Pred: 1 | Match! 
+    -> Scores: [-145, -2, -88, -224, -153, -169, -113, -171, -358, -279]
+ [Sample 36] True: 8 | Pred: 8 | Match! 
+    -> Scores: [-217, -183, -247, -189, -370, -282, -164, -172, 198, -353]
+ [Sample 37] True: 0 | Pred: 0 | Match! 
+    -> Scores: [149, -212, -370, -155, -131, -216, -83, -212, -191, -236]
+ [Sample 38] True: 6 | Pred: 6 | Match! 
+    -> Scores: [-209, -209, -289, -175, -191, -334, 173, -333, 37, -271]
+ [Sample 39] True: 3 | Pred: 3 | Match! 
+    -> Scores: [-202, -124, -292, 200, -179, -168, -162, -192, -222, -276]
+ [Sample 40] True: 2 | Pred: 2 | Match! 
+    -> Scores: [-203, -46, 87, -189, -202, -282, -72, -228, -220, -352]
+ [Sample 41] True: 7 | Pred: 7 | Match! 
+    -> Scores: [-179, -158, -158, -165, -201, -163, -193, 101, -216, -327]
+ [Sample 42] True: 2 | Pred: 2 | Match! 
+    -> Scores: [-148, -76, 113, -195, -246, -253, -127, -249, -126, -374]
+ [Sample 43] True: 1 | Pred: 1 | Match! 
+    -> Scores: [-167, 63, 47, -145, -214, -311, -222, -240, -336, -293]
+ [Sample 44] True: 6 | Pred: 6 | Match! 
+    -> Scores: [-207, -176, -132, -171, -214, -239, 101, -260, -300, -302]
+ [Sample 45] True: 2 | Pred: 2 | Match! 
+    -> Scores: [-201, -75, 100, -137, -157, -313, -54, -331, -279, -325]
+ [Sample 46] True: 9 | Pred: 3 | FAIL!  
+    -> Scores: [-99, -190, -250, 55, -235, -238, -126, -123, -202, -50]
+ [Sample 47] True: 8 | Pred: 8 | Match! 
+    -> Scores: [-223, -169, -250, -199, -389, -310, -179, -87, 223, -363]
+ [Sample 48] True: 1 | Pred: 1 | Match! 
+    -> Scores: [-194, 78, 60, -161, -235, -294, -180, -211, -321, -292]
+ [Sample 49] True: 2 | Pred: 2 | Match! 
+    -> Scores: [-171, -49, 82, -203, -157, -277, -107, -210, -283, -335]
+ [Sample 50] True: 2 | Pred: 1 | FAIL!  
+    -> Scores: [-238, 73, 44, -177, -220, -287, -224, -235, -293, -239]
+ [Sample 51] True: 4 | Pred: 4 | Match! 
+    -> Scores: [-162, -199, -291, -275, 182, -212, -20, -178, -223, -329]
+ [Sample 52] True: 1 | Pred: 2 | FAIL!  
+    -> Scores: [-200, 72, 89, -163, -208, -256, -233, -264, -258, -318]
+ [Sample 53] True: 1 | Pred: 2 | FAIL!  
+    -> Scores: [-194, -33, 62, -179, -261, -239, -195, -265, -88, -319]
+ [Sample 54] True: 3 | Pred: 3 | Match! 
+    -> Scores: [78, -128, -262, 98, -190, -256, -112, -127, -206, -181]
+ [Sample 55] True: 6 | Pred: 6 | Match! 
+    -> Scores: [-278, -175, -134, -182, -178, -252, 62, -281, -167, -316]
+ [Sample 56] True: 2 | Pred: 1 | FAIL!  
+    -> Scores: [-158, -22, -32, -199, -202, -303, -202, -196, -309, -252]
+ [Sample 57] True: 8 | Pred: 8 | Match! 
+    -> Scores: [-116, -214, -254, -241, -305, -253, -60, -263, 154, -293]
+ [Sample 58] True: 3 | Pred: 3 | Match! 
+    -> Scores: [-102, -150, -208, 175, -234, -216, -147, -182, -238, -271]
+ [Sample 59] True: 2 | Pred: 2 | Match! 
+    -> Scores: [-172, 61, 72, -208, -231, -310, -199, -228, -286, -294]
+ [Sample 60] True: 9 | Pred: 9 | Match! 
+    -> Scores: [-165, -150, -310, -138, -173, -223, -118, -170, -219, 258]
+ [Sample 61] True: 3 | Pred: 3 | Match! 
+    -> Scores: [-288, -158, -221, 227, -246, -265, -155, -140, -204, -267]
+ [Sample 62] True: 0 | Pred: 0 | Match! 
+    -> Scores: [204, -169, -259, -117, -264, -225, -111, -116, -249, -282]
+ [Sample 63] True: 0 | Pred: 0 | Match! 
+    -> Scores: [6, -34, -256, -36, -166, -211, -137, -171, -242, -205]
+ [Sample 64] True: 0 | Pred: 0 | Match! 
+    -> Scores: [260, -179, -270, -208, -182, -218, -113, -109, -255, -252]
+ [Sample 65] True: 2 | Pred: 2 | Match! 
+    -> Scores: [-242, -73, 157, -184, -196, -254, -227, -254, -264, -253]
+ [Sample 66] True: 8 | Pred: 8 | Match! 
+    -> Scores: [-223, 44, -158, -190, -255, -249, -270, -249, 80, -375]
+ [Sample 67] True: 9 | Pred: 9 | Match! 
+    -> Scores: [-155, -150, -309, -180, -184, -220, -128, -160, -219, 290]
+ [Sample 68] True: 1 | Pred: 1 | Match! 
+    -> Scores: [-225, 290, 102, -129, -227, -291, -170, -238, -189, -368]
+ [Sample 69] True: 0 | Pred: 0 | Match! 
+    -> Scores: [176, -163, -256, -167, -232, -225, -96, -131, -206, -187]
+ [Sample 70] True: 3 | Pred: 3 | Match! 
+    -> Scores: [-188, -185, -288, 229, -198, -268, -154, -152, -219, -257]
+ [Sample 71] True: 8 | Pred: 8 | Match! 
+    -> Scores: [-200, -217, -310, -249, -168, -243, -110, -322, 186, -308]
+ [Sample 72] True: 2 | Pred: 2 | Match! 
+    -> Scores: [-266, -59, 129, -160, -165, -301, -126, -271, -159, -321]
+ [Sample 73] True: 1 | Pred: 1 | Match! 
+    -> Scores: [-143, 46, -199, -176, -229, -289, -252, -140, -80, -323]
+ [Sample 74] True: 0 | Pred: 0 | Match! 
+    -> Scores: [192, -190, -302, -161, -196, -206, -110, -105, -252, -234]
+ [Sample 75] True: 3 | Pred: 3 | Match! 
+    -> Scores: [-209, -234, -256, 241, -214, -212, -91, -224, -205, -314]
+ [Sample 76] True: 1 | Pred: 1 | Match! 
+    -> Scores: [-222, -16, -221, -123, -195, -222, -280, -266, -105, -261]
+ [Sample 77] True: 2 | Pred: 2 | Match! 
+    -> Scores: [-174, -112, 124, -222, -194, -311, -118, -221, -233, -364]
+ [Sample 78] True: 3 | Pred: 3 | Match! 
+    -> Scores: [-226, -210, -281, 208, -206, -175, -86, -215, -245, -296]
+ [Sample 79] True: 0 | Pred: 0 | Match! 
+    -> Scores: [204, -132, -203, -125, -147, -246, -115, -224, -263, -262]
+ [Sample 80] True: 0 | Pred: 0 | Match! 
+    -> Scores: [155, -165, -247, -124, -247, -250, -126, -117, -235, -297]
+ [Sample 81] True: 2 | Pred: 1 | FAIL!  
+    -> Scores: [-172, 83, 59, -163, -233, -313, -219, -249, -308, -296]
+ [Sample 82] True: 0 | Pred: 0 | Match! 
+    -> Scores: [158, -147, -210, -134, -177, -198, -122, -220, -239, -316]
+ [Sample 83] True: 3 | Pred: 3 | Match! 
+    -> Scores: [-247, -175, -206, 42, -222, -156, -192, -211, -189, -297]
+ [Sample 84] True: 0 | Pred: 0 | Match! 
+    -> Scores: [33, -183, -326, -149, -116, -59, -111, -145, -222, -89]
+ [Sample 85] True: 8 | Pred: 8 | Match! 
+    -> Scores: [-101, -155, -265, -204, -217, -298, -249, -194, 172, -322]
+ [Sample 86] True: 8 | Pred: 8 | Match! 
+    -> Scores: [-179, -64, -144, -201, -275, -206, -293, -260, 126, -342]
+ [Sample 87] True: 1 | Pred: 1 | Match! 
+    -> Scores: [-182, 84, 67, -197, -241, -296, -201, -226, -299, -293]
+ [Sample 88] True: 1 | Pred: 2 | FAIL!  
+    -> Scores: [-266, 47, 77, -127, -201, -240, -241, -264, -254, -264]
+ [Sample 89] True: 1 | Pred: 2 | FAIL!  
+    -> Scores: [-231, 2, 45, -143, -141, -300, -167, -277, -227, -321]
+ [Sample 90] True: 6 | Pred: 6 | Match! 
+    -> Scores: [-271, -210, -117, -134, -207, -225, 86, -282, -200, -320]
+ [Sample 91] True: 2 | Pred: 2 | Match! 
+    -> Scores: [-156, -43, 144, -184, -229, -315, -165, -232, -215, -349]
+ [Sample 92] True: 3 | Pred: 3 | Match! 
+    -> Scores: [-213, -154, -203, 337, -192, -207, -180, -219, -232, -200]
+ [Sample 93] True: 2 | Pred: 2 | Match! 
+    -> Scores: [-162, -67, 170, -120, -210, -260, -204, -227, -366, -280]
+ [Sample 94] True: 9 | Pred: 9 | Match! 
+    -> Scores: [-155, -150, -309, -180, -184, -220, -128, -160, -219, 290]
+ [Sample 95] True: 2 | Pred: 1 | FAIL!  
+    -> Scores: [-265, 94, 68, -182, -215, -277, -197, -247, -267, -232]
+ [Sample 96] True: 4 | Pred: 4 | Match! 
+    -> Scores: [-215, -189, -297, -200, 251, -212, -97, -308, -288, -293]
+ [Sample 97] True: 6 | Pred: 6 | Match! 
+    -> Scores: [-231, -77, -90, -65, -189, -291, 30, -260, -249, -293]
+ [Sample 98] True: 0 | Pred: 0 | Match! 
+    -> Scores: [113, -138, -205, -38, -154, -279, -137, -231, -238, -237]
+ [Sample 99] True: 0 | Pred: 0 | Match! 
+    -> Scores: [189, -190, -277, -170, -232, -200, -116, -138, -235, -240]
+ [Sample 100] True: 0 | Pred: 0 | Match! 
+    -> Scores: [180, -147, -252, -143, -220, -220, -121, -126, -245, -290]
+ [Sample 101] True: 6 | Pred: 6 | Match! 
+    -> Scores: [-168, -185, -123, -213, -150, -274, 1, -346, -151, -332]
+ [Sample 102] True: 7 | Pred: 7 | Match! 
+    -> Scores: [-196, -164, -141, -124, -113, -228, -243, 193, -231, -314]
+ [Sample 103] True: 2 | Pred: 2 | Match! 
+    -> Scores: [-166, -105, 190, -153, -224, -302, -240, -217, -312, -287]
+ [Sample 104] True: 7 | Pred: 7 | Match! 
+    -> Scores: [-231, -121, -146, -192, 13, -270, -188, 87, -225, -316]
+ [Sample 105] True: 5 | Pred: 5 | Match! 
+    -> Scores: [-219, -180, -257, -194, -188, 139, -164, -119, -163, -321]
+ [Sample 106] True: 5 | Pred: 5 | Match! 
+    -> Scores: [-228, -225, -342, -149, -104, 176, -106, -229, -245, -252]
+ [Sample 107] True: 1 | Pred: 1 | Match! 
+    -> Scores: [-290, 125, -156, -137, -178, -248, -240, -198, -152, -314]
+ [Sample 108] True: 3 | Pred: 3 | Match! 
+    -> Scores: [-231, -157, -241, 280, -243, -291, -153, -150, -217, -252]
+ [Sample 109] True: 2 | Pred: 2 | Match! 
+    -> Scores: [-171, -108, 117, -172, -159, -309, -104, -317, -270, -355]
+ [Sample 110] True: 6 | Pred: 6 | Match! 
+    -> Scores: [-179, -215, -203, -162, -180, -318, 154, -284, -101, -301]
+ [Sample 111] True: 3 | Pred: 3 | Match! 
+    -> Scores: [-169, -97, -271, 168, -205, -202, -128, -182, -240, -255]
+ [Sample 112] True: 7 | Pred: 7 | Match! 
+    -> Scores: [-133, -202, -310, -248, 11, -257, -99, 24, -205, -320]
+ [Sample 113] True: 6 | Pred: 6 | Match! 
+    -> Scores: [-161, -200, -303, -213, -95, -288, 28, -271, -155, -287]
+ [Sample 114] True: 7 | Pred: 7 | Match! 
+    -> Scores: [-212, -194, -253, -227, -179, -162, -114, 203, -201, -261]
+ [Sample 115] True: 2 | Pred: 2 | Match! 
+    -> Scores: [-178, -44, 118, -135, -160, -326, -7, -300, -292, -360]
+ [Sample 116] True: 5 | Pred: 5 | Match! 
+    -> Scores: [-207, -179, -253, -164, -160, 202, -191, -146, -239, -278]
+ [Sample 117] True: 2 | Pred: 2 | Match! 
+    -> Scores: [-234, -74, 92, -113, -163, -297, -80, -324, -241, -330]
+ [Sample 118] True: 8 | Pred: 8 | Match! 
+    -> Scores: [-106, -165, -297, -175, -147, -352, -78, -346, 66, -305]
+ [Sample 119] True: 5 | Pred: 5 | Match! 
+    -> Scores: [-176, -178, -278, -151, -159, 171, -128, -182, -237, -266]
+ [Sample 120] True: 7 | Pred: 7 | Match! 
+    -> Scores: [-199, -192, -135, -193, -312, -86, -208, 180, -187, -347]
+ [Sample 121] True: 8 | Pred: 8 | Match! 
+    -> Scores: [-154, -206, -254, -188, -278, -299, -136, -223, 174, -299]
+ [Sample 122] True: 9 | Pred: 9 | Match! 
+    -> Scores: [-155, -150, -309, -180, -184, -220, -128, -160, -219, 290]
+ [Sample 123] True: 3 | Pred: 3 | Match! 
+    -> Scores: [-156, -158, -191, 88, -209, -174, -134, -218, -222, -225]
+ [Sample 124] True: 0 | Pred: 0 | Match! 
+    -> Scores: [249, -188, -296, -167, -144, -229, -108, -238, -231, -209]
+ [Sample 125] True: 2 | Pred: 2 | Match! 
+    -> Scores: [-192, -93, 150, -229, -231, -297, -202, -206, -97, -385]
+ [Sample 126] True: 8 | Pred: 8 | Match! 
+    -> Scores: [-186, -165, -207, -218, -211, -242, -49, -321, 75, -358]
+ [Sample 127] True: 3 | Pred: 3 | Match! 
+    -> Scores: [-213, -154, -203, 337, -192, -207, -180, -219, -232, -200]
+ [Sample 128] True: 8 | Pred: 8 | Match! 
+    -> Scores: [-193, -210, -300, -207, -292, -315, -55, -270, 169, -309]
+ [Sample 129] True: 5 | Pred: 5 | Match! 
+    -> Scores: [-227, -197, -335, -163, -148, 248, -98, -163, -211, -250]
+ [Sample 130] True: 6 | Pred: 6 | Match! 
+    -> Scores: [-156, -198, -268, -188, -191, -295, 153, -265, -220, -306]
+ [Sample 131] True: 7 | Pred: 7 | Match! 
+    -> Scores: [-137, -160, -146, -229, -181, -140, -182, 222, -242, -346]
+ [Sample 132] True: 6 | Pred: 6 | Match! 
+    -> Scores: [-122, -191, -201, -145, -180, -342, 90, -262, -131, -294]
+ [Sample 133] True: 8 | Pred: 8 | Match! 
+    -> Scores: [-217, -98, -150, -126, -294, -213, -301, -240, 180, -356]
+ [Sample 134] True: 6 | Pred: 6 | Match! 
+    -> Scores: [-203, -179, -231, -231, -138, -280, 95, -292, -172, -332]
+ [Sample 135] True: 1 | Pred: 2 | FAIL!  
+    -> Scores: [-266, 47, 77, -127, -201, -240, -241, -264, -254, -264]
+ [Sample 136] True: 3 | Pred: 3 | Match! 
+    -> Scores: [-319, -170, -188, 290, -216, -216, -169, -209, -218, -323]
+ [Sample 137] True: 2 | Pred: 2 | Match! 
+    -> Scores: [-197, -48, 182, -127, -263, -255, -222, -195, -335, -294]
+ [Sample 138] True: 0 | Pred: 0 | Match! 
+    -> Scores: [202, -194, -236, -135, -179, -145, -121, -209, -238, -280]
+ [Sample 139] True: 4 | Pred: 4 | Match! 
+    -> Scores: [-140, -218, -418, -173, 90, -163, -107, -58, -136, -226]
+ [Sample 140] True: 8 | Pred: 8 | Match! 
+    -> Scores: [-168, -103, -208, -114, -234, -271, -204, -292, 157, -304]
+ [Sample 141] True: 1 | Pred: 1 | Match! 
+    -> Scores: [-265, 94, 68, -182, -215, -277, -197, -247, -267, -232]
+ [Sample 142] True: 0 | Pred: 0 | Match! 
+    -> Scores: [204, -188, -321, -205, -200, -204, -123, -127, -240, -204]
+ [Sample 143] True: 1 | Pred: 2 | FAIL!  
+    -> Scores: [-216, -58, 68, -147, -182, -231, -207, -287, -250, -289]
+ [Sample 144] True: 4 | Pred: 4 | Match! 
+    -> Scores: [-115, -180, -285, -202, 144, -304, -128, -117, -236, -301]
+ [Sample 145] True: 0 | Pred: 0 | Match! 
+    -> Scores: [160, -179, -285, -92, -168, -255, -140, -211, -206, -275]
+ [Sample 146] True: 0 | Pred: 0 | Match! 
+    -> Scores: [203, -191, -236, -116, -176, -147, -122, -211, -233, -287]
+ [Sample 147] True: 6 | Pred: 6 | Match! 
+    -> Scores: [-152, -272, -88, -192, -209, -336, 58, -250, -240, -300]
+ [Sample 148] True: 0 | Pred: 0 | Match! 
+    -> Scores: [7, -74, -248, -23, -182, -214, -127, -109, -187, -306]
+ [Sample 149] True: 3 | Pred: 3 | Match! 
+    -> Scores: [-203, -99, -260, 256, -234, -197, -174, -178, -262, -264]
+ [Sample 150] True: 0 | Pred: 0 | Match! 
+    -> Scores: [250, -174, -287, -140, -176, -238, -132, -172, -225, -230]
+ [Sample 151] True: 6 | Pred: 6 | Match! 
+    -> Scores: [-148, -198, -140, -216, -192, -228, 57, -238, -170, -316]
+ [Sample 152] True: 2 | Pred: 2 | Match! 
+    -> Scores: [-221, -105, 224, -179, -262, -258, -148, -240, -244, -342]
+ [Sample 153] True: 3 | Pred: 3 | Match! 
+    -> Scores: [-168, -133, -213, 211, -185, -254, -157, -208, -247, -234]
+ [Sample 154] True: 2 | Pred: 2 | Match! 
+    -> Scores: [-169, -72, 123, -210, -188, -266, -147, -294, -260, -330]
+ [Sample 155] True: 8 | Pred: 8 | Match! 
+    -> Scores: [-168, -128, -143, -216, -462, -221, -265, -203, 197, -352]
+ [Sample 156] True: 2 | Pred: 2 | Match! 
+    -> Scores: [-162, -82, 222, -202, -208, -336, -141, -253, -236, -354]
+ [Sample 157] True: 0 | Pred: 0 | Match! 
+    -> Scores: [203, -161, -203, -162, -177, -262, -130, -186, -231, -310]
+ [Sample 158] True: 0 | Pred: 0 | Match! 
+    -> Scores: [121, -189, -273, -134, -240, -226, -123, -153, -220, -273]
+ [Sample 159] True: 2 | Pred: 2 | Match! 
+    -> Scores: [-87, -94, 126, -215, -370, -310, -10, -167, -243, -301]
+ [Sample 160] True: 3 | Pred: 3 | Match! 
+    -> Scores: [-104, -160, -207, 104, -209, -194, -125, -209, -240, -184]
+ [Sample 161] True: 7 | Pred: 7 | Match! 
+    -> Scores: [-214, -138, -105, -172, -212, -188, -247, 218, -243, -348]
+ [Sample 162] True: 0 | Pred: 0 | Match! 
+    -> Scores: [109, -177, -288, -30, -185, -196, -133, -188, -221, -187]
+ [Sample 163] True: 3 | Pred: 3 | Match! 
+    -> Scores: [-242, -129, -179, 280, -206, -192, -172, -173, -220, -270]
+ [Sample 164] True: 7 | Pred: 4 | FAIL!  
+    -> Scores: [-136, -186, -295, -126, -105, -116, -119, -116, -201, -185]
+ [Sample 165] True: 5 | Pred: 5 | Match! 
+    -> Scores: [-223, -169, -279, -158, -148, 238, -144, -183, -254, -308]
+ [Sample 166] True: 0 | Pred: 0 | Match! 
+    -> Scores: [331, -178, -304, -235, -162, -255, -123, -114, -247, -202]
+ [Sample 167] True: 3 | Pred: 3 | Match! 
+    -> Scores: [-152, -104, -277, 183, -196, -221, -113, -200, -218, -203]
+ [Sample 168] True: 1 | Pred: 1 | Match! 
+    -> Scores: [-134, -12, -98, -193, -199, -268, -136, -300, -204, -315]
+ [Sample 169] True: 7 | Pred: 7 | Match! 
+    -> Scores: [-206, -180, -144, -196, -286, -201, -187, 259, -130, -324]
+ [Sample 170] True: 5 | Pred: 5 | Match! 
+    -> Scores: [-140, -222, -265, -190, -128, 115, -158, -162, -201, -233]
+ [Sample 171] True: 1 | Pred: 1 | Match! 
+    -> Scores: [-222, 98, 91, -189, -308, -279, -136, -232, -45, -363]
+ [Sample 172] True: 6 | Pred: 6 | Match! 
+    -> Scores: [-97, -207, -189, -239, -178, -331, 196, -207, -277, -322]
+ [Sample 173] True: 8 | Pred: 8 | Match! 
+    -> Scores: [-157, -135, -216, -217, -348, -274, -230, -105, 67, -338]
+ [Sample 174] True: 3 | Pred: 3 | Match! 
+    -> Scores: [-297, -97, -251, 282, -236, -152, -204, -197, -261, -268]
+ [Sample 175] True: 7 | Pred: 7 | Match! 
+    -> Scores: [-162, -149, -167, -220, -201, -168, -158, 146, -287, -322]
+ [Sample 176] True: 6 | Pred: 6 | Match! 
+    -> Scores: [-186, -195, -214, -186, -209, -290, 126, -240, -290, -291]
+ [Sample 177] True: 3 | Pred: 3 | Match! 
+    -> Scores: [-291, -158, -185, 256, -206, -223, -175, -170, -214, -329]
+ [Sample 178] True: 0 | Pred: 0 | Match! 
+    -> Scores: [150, -150, -194, -143, -188, -194, -106, -169, -250, -326]
+ [Sample 179] True: 0 | Pred: 0 | Match! 
+    -> Scores: [283, -151, -204, -192, -173, -219, -99, -196, -249, -284]
+ [Sample 180] True: 2 | Pred: 2 | Match! 
+    -> Scores: [-172, 61, 72, -208, -231, -310, -199, -228, -286, -294]
+ [Sample 181] True: 3 | Pred: 3 | Match! 
+    -> Scores: [-273, -128, -293, 287, -201, -183, -185, -229, -219, -258]
+ [Sample 182] True: 3 | Pred: 3 | Match! 
+    -> Scores: [-163, -121, -306, 203, -169, -199, -157, -149, -241, -251]
+ [Sample 183] True: 2 | Pred: 2 | Match! 
+    -> Scores: [-155, -104, 216, -234, -232, -320, -147, -302, -213, -305]
+ [Sample 184] True: 2 | Pred: 2 | Match! 
+    -> Scores: [-169, -75, 77, -237, -156, -305, -254, -304, -232, -289]
+ [Sample 185] True: 6 | Pred: 6 | Match! 
+    -> Scores: [-189, -260, -102, -212, -205, -304, 37, -319, -125, -353]
+ [Sample 186] True: 8 | Pred: 8 | Match! 
+    -> Scores: [-178, -193, -241, -200, -202, -232, -127, -304, 173, -317]
+ [Sample 187] True: 0 | Pred: 0 | Match! 
+    -> Scores: [144, -180, -297, -77, -137, -203, -148, -144, -222, -239]
+ [Sample 188] True: 1 | Pred: 2 | FAIL!  
+    -> Scores: [-266, 47, 77, -127, -201, -240, -241, -264, -254, -264]
+ [Sample 189] True: 2 | Pred: 2 | Match! 
+    -> Scores: [-175, 14, 138, -191, -267, -283, -148, -258, -238, -359]
+ [Sample 190] True: 1 | Pred: 1 | Match! 
+    -> Scores: [-238, 73, 44, -177, -220, -287, -224, -235, -293, -239]
+ [Sample 191] True: 1 | Pred: 2 | FAIL!  
+    -> Scores: [-174, -23, 52, -153, -253, -257, -161, -201, -98, -336]
+ [Sample 192] True: 0 | Pred: 0 | Match! 
+    -> Scores: [138, -183, -284, -114, -203, -280, -137, -168, -186, -267]
+ [Sample 193] True: 3 | Pred: 3 | Match! 
+    -> Scores: [-202, -206, -246, 72, -166, -200, -145, -164, -239, -96]
+ [Sample 194] True: 0 | Pred: 0 | Match! 
+    -> Scores: [204, -153, -204, -143, -183, -242, -128, -171, -253, -297]
+ [Sample 195] True: 1 | Pred: 2 | FAIL!  
+    -> Scores: [-172, 61, 72, -208, -231, -310, -199, -228, -286, -294]
+ [Sample 196] True: 1 | Pred: 1 | Match! 
+    -> Scores: [-193, 68, 58, -155, -229, -299, -205, -231, -326, -292]
+ [Sample 197] True: 3 | Pred: 3 | Match! 
+    -> Scores: [-151, -92, -260, 228, -217, -193, -166, -169, -273, -235]
+ [Sample 198] True: 0 | Pred: 0 | Match! 
+    -> Scores: [121, -183, -303, -163, -183, -197, -110, -126, -226, -192]
+ [Sample 199] True: 2 | Pred: 2 | Match! 
+    -> Scores: [-203, 6, 130, -196, -219, -280, -199, -277, -261, -285]
+ [Sample 200] True: 1 | Pred: 2 | FAIL!  
+    -> Scores: [-215, 181, 203, -219, -212, -323, -131, -278, -191, -290]
+ [Sample 201] True: 1 | Pred: 1 | Match! 
+    -> Scores: [-253, 109, 55, -167, -191, -243, -225, -269, -275, -244]
+ [Sample 202] True: 3 | Pred: 3 | Match! 
+    -> Scores: [-185, -121, -291, 167, -170, -177, -145, -185, -246, -268]
+ [Sample 203] True: 2 | Pred: 2 | Match! 
+    -> Scores: [-166, -54, 154, -193, -271, -293, -101, -180, -225, -352]
+ [Sample 204] True: 1 | Pred: 1 | Match! 
+    -> Scores: [-269, 127, 32, -167, -192, -246, -224, -254, -262, -246]
+ [Sample 205] True: 6 | Pred: 1 | FAIL!  
+    -> Scores: [-155, 39, -37, -207, -237, -241, -194, -223, -194, -328]
+ [Sample 206] True: 0 | Pred: 0 | Match! 
+    -> Scores: [138, -154, -209, -68, -190, -226, -123, -191, -227, -308]
+ [Sample 207] True: 5 | Pred: 5 | Match! 
+    -> Scores: [-184, -195, -351, -151, -98, 120, -104, -233, -238, -239]
+ [Sample 208] True: 2 | Pred: 2 | Match! 
+    -> Scores: [-160, -130, 136, -207, -239, -300, -187, -274, -181, -367]
+ [Sample 209] True: 0 | Pred: 0 | Match! 
+    -> Scores: [-17, -129, -307, -126, -255, -210, -141, -67, -213, -50]
+ [Sample 210] True: 2 | Pred: 2 | Match! 
+    -> Scores: [-209, -72, 239, -213, -252, -294, -147, -292, -235, -293]
+ [Sample 211] True: 7 | Pred: 7 | Match! 
+    -> Scores: [-237, -153, -148, -197, -193, -147, -262, 181, -206, -282]
+ [Sample 212] True: 1 | Pred: 1 | Match! 
+    -> Scores: [-251, 83, 77, -203, -219, -274, -211, -246, -258, -235]
+ [Sample 213] True: 6 | Pred: 2 | FAIL!  
+    -> Scores: [-94, -149, -15, -242, -138, -243, -67, -187, -141, -313]
+ [Sample 214] True: 4 | Pred: 4 | Match! 
+    -> Scores: [-189, -199, -427, -190, 171, -208, -156, -153, -60, -265]
+ [Sample 215] True: 4 | Pred: 4 | Match! 
+    -> Scores: [-191, -207, -363, -171, 164, -258, -105, -106, -279, -311]
+ [Sample 216] True: 5 | Pred: 5 | Match! 
+    -> Scores: [-111, -211, -246, -137, -140, 136, -181, -188, -204, -281]
+ [Sample 217] True: 0 | Pred: 0 | Match! 
+    -> Scores: [145, -163, -264, -89, -256, -255, -125, -136, -226, -255]
+ [Sample 218] True: 6 | Pred: 8 | FAIL!  
+    -> Scores: [-266, -153, -243, -193, -140, -277, -102, -299, 103, -326]
+ [Sample 219] True: 3 | Pred: 3 | Match! 
+    -> Scores: [-206, -212, -272, 220, -209, -185, -95, -209, -218, -296]
+ [Sample 220] True: 8 | Pred: 8 | Match! 
+    -> Scores: [-216, -159, -244, -206, -321, -317, -215, -199, 318, -326]
+ [Sample 221] True: 1 | Pred: 1 | Match! 
+    -> Scores: [-194, 78, 60, -161, -235, -294, -180, -211, -321, -292]
+ [Sample 222] True: 0 | Pred: 0 | Match! 
+    -> Scores: [188, -155, -205, -157, -184, -208, -120, -181, -256, -294]
+ [Sample 223] True: 2 | Pred: 1 | FAIL!  
+    -> Scores: [-139, 78, 65, -164, -214, -312, -232, -265, -326, -295]
+ [Sample 224] True: 6 | Pred: 6 | Match! 
+    -> Scores: [-213, -225, -214, -209, -163, -295, 138, -236, -214, -341]
+ [Sample 225] True: 2 | Pred: 1 | FAIL!  
+    -> Scores: [-139, 78, 65, -164, -214, -312, -232, -265, -326, -295]
+ [Sample 226] True: 0 | Pred: 0 | Match! 
+    -> Scores: [201, -187, -303, -159, -176, -275, -128, -140, -224, -272]
+ [Sample 227] True: 9 | Pred: 0 | FAIL!  
+    -> Scores: [8, -51, -257, -19, -166, -171, -113, -142, -237, -198]
+ [Sample 228] True: 3 | Pred: 3 | Match! 
+    -> Scores: [-238, -180, -228, 248, -233, -192, -193, -200, -215, -288]
+ [Sample 229] True: 3 | Pred: 3 | Match! 
+    -> Scores: [-310, -170, -178, 232, -200, -148, -190, -191, -267, -247]
+ [Sample 230] True: 8 | Pred: 8 | Match! 
+    -> Scores: [-133, -204, -207, -195, -198, -277, -116, -347, 97, -366]
+ [Sample 231] True: 0 | Pred: 0 | Match! 
+    -> Scores: [246, -189, -265, -142, -176, -233, -132, -134, -246, -211]
+ [Sample 232] True: 8 | Pred: 8 | Match! 
+    -> Scores: [-191, -177, -338, -186, -188, -271, -131, -352, 187, -326]
+ [Sample 233] True: 4 | Pred: 4 | Match! 
+    -> Scores: [-192, -196, -350, -184, 212, -219, -125, -77, -254, -279]
+ [Sample 234] True: 2 | Pred: 2 | Match! 
+    -> Scores: [-232, -114, 142, -154, -213, -281, -104, -245, -213, -327]
+ [Sample 235] True: 1 | Pred: 1 | Match! 
+    -> Scores: [-185, 86, 71, -197, -242, -298, -197, -223, -290, -300]
+ [Sample 236] True: 7 | Pred: 7 | Match! 
+    -> Scores: [-231, -167, -132, -132, -379, -186, -232, 270, -180, -304]
+ [Sample 237] True: 9 | Pred: 9 | Match! 
+    -> Scores: [-142, -129, -233, -192, -166, -270, -89, -160, -278, 140]
+ [Sample 238] True: 3 | Pred: 3 | Match! 
+    -> Scores: [-173, -102, -271, 222, -182, -237, -142, -181, -237, -196]
+ [Sample 239] True: 9 | Pred: 9 | Match! 
+    -> Scores: [-165, -150, -310, -138, -173, -223, -118, -170, -219, 258]
+ [Sample 240] True: 2 | Pred: 2 | Match! 
+    -> Scores: [-116, -26, 98, -201, -200, -318, -36, -186, -282, -337]
+ [Sample 241] True: 5 | Pred: 5 | Match! 
+    -> Scores: [-224, -200, -331, -172, -130, 231, -118, -213, -264, -276]
+ [Sample 242] True: 5 | Pred: 5 | Match! 
+    -> Scores: [-114, -220, -268, -187, -133, 135, -145, -159, -213, -204]
+ [Sample 243] True: 0 | Pred: 0 | Match! 
+    -> Scores: [141, -159, -197, -145, -178, -220, -101, -186, -236, -314]
+ [Sample 244] True: 8 | Pred: 8 | Match! 
+    -> Scores: [-149, -191, -276, -259, -356, -309, -136, -200, 311, -349]
+ [Sample 245] True: 1 | Pred: 2 | FAIL!  
+    -> Scores: [-189, -64, 28, -178, -204, -257, -166, -256, -255, -341]
+ [Sample 246] True: 2 | Pred: 1 | FAIL!  
+    -> Scores: [-194, 78, 60, -161, -235, -294, -180, -211, -321, -292]
+ [Sample 247] True: 1 | Pred: 2 | FAIL!  
+    -> Scores: [-172, 61, 72, -208, -231, -310, -199, -228, -286, -294]
+ [Sample 248] True: 0 | Pred: 0 | Match! 
+    -> Scores: [138, -141, -208, -89, -193, -234, -120, -189, -230, -289]
+ [Sample 249] True: 1 | Pred: 1 | Match! 
+    -> Scores: [-155, 32, -154, -222, -232, -235, -166, -203, -146, -379]
+ [Sample 250] True: 0 | Pred: 0 | Match! 
+    -> Scores: [172, -147, -207, -110, -175, -243, -130, -189, -249, -309]
+ [Sample 251] True: 0 | Pred: 0 | Match! 
+    -> Scores: [-26, -98, -293, -94, -235, -141, -135, -76, -219, -159]
+ [Sample 252] True: 9 | Pred: 3 | FAIL!  
+    -> Scores: [-181, -126, -263, 104, -199, -189, -143, -166, -220, -44]
+ [Sample 253] True: 5 | Pred: 5 | Match! 
+    -> Scores: [-87, -196, -257, -200, -177, 171, -138, -100, -235, -233]
+ [Sample 254] True: 4 | Pred: 4 | Match! 
+    -> Scores: [-188, -203, -316, -178, 266, -209, -118, -254, -271, -294]
+ [Sample 255] True: 3 | Pred: 3 | Match! 
+    -> Scores: [-189, -154, -181, 139, -224, -159, -131, -197, -205, -278]
+ [Sample 256] True: 3 | Pred: 3 | Match! 
+    -> Scores: [-154, -125, -286, 162, -193, -144, -140, -203, -202, -207]
+ [Sample 257] True: 1 | Pred: 1 | Match! 
+    -> Scores: [-176, 112, -71, -175, -216, -289, -235, -278, -70, -360]
+ [Sample 258] True: 1 | Pred: 1 | Match! 
+    -> Scores: [-131, 80, 77, -161, -194, -334, -211, -275, -346, -291]
+ [Sample 259] True: 3 | Pred: 3 | Match! 
+    -> Scores: [-167, -165, -182, 190, -234, -180, -134, -202, -195, -292]
+ [Sample 260] True: 5 | Pred: 5 | Match! 
+    -> Scores: [-241, -194, -255, -171, -118, 169, -186, -156, -225, -248]
+ [Sample 261] True: 9 | Pred: 9 | Match! 
+    -> Scores: [-155, -150, -309, -180, -184, -220, -128, -160, -219, 290]
+ [Sample 262] True: 6 | Pred: 6 | Match! 
+    -> Scores: [-169, -185, -163, -203, -197, -242, 97, -282, -163, -356]
+ [Sample 263] True: 7 | Pred: 7 | Match! 
+    -> Scores: [-168, -86, -239, -206, -165, -271, -217, 173, -240, -302]
+ [Sample 264] True: 0 | Pred: 0 | Match! 
+    -> Scores: [178, -191, -231, -116, -172, -222, -133, -207, -236, -298]
+ [Sample 265] True: 0 | Pred: 0 | Match! 
+    -> Scores: [244, -177, -240, -153, -157, -239, -123, -183, -260, -245]
+ [Sample 266] True: 1 | Pred: 2 | FAIL!  
+    -> Scores: [-159, 85, 95, -187, -217, -258, -194, -272, -231, -307]
+ [Sample 267] True: 9 | Pred: 9 | Match! 
+    -> Scores: [-88, -147, -287, -105, -167, -196, -126, -190, -240, 193]
+ [Sample 268] True: 2 | Pred: 2 | Match! 
+    -> Scores: [-154, -51, 137, -183, -229, -295, -87, -217, -191, -371]
+ [Sample 269] True: 3 | Pred: 3 | Match! 
+    -> Scores: [-270, -120, -196, 186, -187, -108, -135, -192, -193, -191]
+ [Sample 270] True: 8 | Pred: 8 | Match! 
+    -> Scores: [-151, -195, -204, -204, -194, -267, -93, -268, 21, -344]
+ [Sample 271] True: 3 | Pred: 3 | Match! 
+    -> Scores: [-210, -175, -210, 273, -227, -176, -142, -166, -239, -257]
+ [Sample 272] True: 5 | Pred: 5 | Match! 
+    -> Scores: [-214, -208, -318, -170, -165, 270, -108, -184, -266, -268]
+ [Sample 273] True: 5 | Pred: 5 | Match! 
+    -> Scores: [-77, -205, -267, -146, -119, 28, -152, -85, -214, -291]
+ [Sample 274] True: 6 | Pred: 6 | Match! 
+    -> Scores: [-186, -179, -281, -146, -179, -325, 49, -239, -183, -298]
+ [Sample 275] True: 0 | Pred: 0 | Match! 
+    -> Scores: [126, -197, -241, -72, -150, -92, -93, -201, -192, -155]
+ [Sample 276] True: 0 | Pred: 0 | Match! 
+    -> Scores: [218, -160, -268, -134, -239, -266, -124, -165, -230, -292]
+ [Sample 277] True: 2 | Pred: 2 | Match! 
+    -> Scores: [-141, -109, 109, -200, -189, -293, -191, -249, -164, -374]
+ [Sample 278] True: 9 | Pred: 9 | Match! 
+    -> Scores: [-140, -152, -313, -101, -193, -223, -126, -151, -214, 134]
+ [Sample 279] True: 0 | Pred: 0 | Match! 
+    -> Scores: [125, -186, -307, -105, -157, -215, -107, -179, -213, -138]
+ [Sample 280] True: 8 | Pred: 8 | Match! 
+    -> Scores: [-233, -183, -300, -202, -207, -310, -186, -66, 105, -335]
+ [Sample 281] True: 8 | Pred: 8 | Match! 
+    -> Scores: [-144, -209, -266, -250, -342, -306, -167, -188, 313, -329]
+ [Sample 282] True: 4 | Pred: 4 | Match! 
+    -> Scores: [-212, -204, -353, -179, 262, -244, -69, -170, -210, -290]
+ [Sample 283] True: 6 | Pred: 6 | Match! 
+    -> Scores: [-93, -177, -232, -237, -87, -290, 91, -268, -231, -276]
+ [Sample 284] True: 7 | Pred: 7 | Match! 
+    -> Scores: [-285, -165, -116, -133, -148, -210, -258, 129, -191, -299]
+ [Sample 285] True: 2 | Pred: 2 | Match! 
+    -> Scores: [-141, -78, -63, -257, -153, -270, -83, -218, -262, -352]
+ [Sample 286] True: 7 | Pred: 7 | Match! 
+    -> Scores: [-210, -108, -227, -214, -172, -210, -213, 202, -164, -302]
+ [Sample 287] True: 3 | Pred: 3 | Match! 
+    -> Scores: [-33, -123, -185, -25, -197, -173, -129, -196, -148, -197]
+ [Sample 288] True: 2 | Pred: 1 | FAIL!  
+    -> Scores: [-218, 80, 77, -165, -208, -248, -227, -260, -265, -301]
+ [Sample 289] True: 0 | Pred: 0 | Match! 
+    -> Scores: [203, -143, -212, -132, -185, -239, -128, -220, -217, -316]
+ [Sample 290] True: 5 | Pred: 5 | Match! 
+    -> Scores: [-182, -184, -329, -163, -128, 195, -101, -213, -252, -275]
+ [Sample 291] True: 3 | Pred: 3 | Match! 
+    -> Scores: [-318, -134, -187, 247, -177, -163, -162, -255, -207, -234]
+ [Sample 292] True: 6 | Pred: 6 | Match! 
+    -> Scores: [-178, -161, -213, -171, -146, -322, 121, -330, -108, -275]
+ [Sample 293] True: 1 | Pred: 1 | Match! 
+    -> Scores: [-172, 64, 57, -144, -230, -306, -213, -237, -330, -291]
+ [Sample 294] True: 1 | Pred: 1 | Match! 
+    -> Scores: [-172, 48, 47, -197, -223, -305, -180, -219, -327, -290]
+ [Sample 295] True: 2 | Pred: 2 | Match! 
+    -> Scores: [-259, -79, 211, -182, -189, -281, -173, -299, -229, -251]
+ [Sample 296] True: 1 | Pred: 1 | Match! 
+    -> Scores: [-185, 86, 71, -197, -242, -298, -197, -223, -290, -300]
+ [Sample 297] True: 1 | Pred: 1 | Match! 
+    -> Scores: [-178, 68, -79, -198, -224, -263, -162, -311, -185, -315]
+ [Sample 298] True: 9 | Pred: 9 | Match! 
+    -> Scores: [-155, -150, -309, -180, -184, -220, -128, -160, -219, 290]
+ [Sample 299] True: 3 | Pred: 3 | Match! 
+    -> Scores: [-249, -227, -244, 132, -204, -186, -87, -238, -186, -310]
+ [Sample 300] True: 4 | Pred: 4 | Match! 
+    -> Scores: [-121, -197, -291, -227, 51, -209, -129, -63, -266, -366]
+ [Sample 301] True: 0 | Pred: 0 | Match! 
+    -> Scores: [89, -166, -204, -145, -176, -163, -102, -194, -225, -223]
+ [Sample 302] True: 0 | Pred: 0 | Match! 
+    -> Scores: [235, -191, -258, -146, -165, -177, -115, -227, -241, -238]
+ [Sample 303] True: 1 | Pred: 1 | Match! 
+    -> Scores: [-194, 78, 60, -161, -235, -294, -180, -211, -321, -292]
+ [Sample 304] True: 4 | Pred: 7 | FAIL!  
+    -> Scores: [-208, -170, -141, -195, -171, -255, -259, 205, -232, -347]
+ [Sample 305] True: 1 | Pred: 1 | Match! 
+    -> Scores: [-192, 136, -76, -235, -235, -238, -184, -207, -303, -354]
+ [Sample 306] True: 9 | Pred: 9 | Match! 
+    -> Scores: [-155, -150, -309, -180, -184, -220, -128, -160, -219, 290]
+ [Sample 307] True: 3 | Pred: 3 | Match! 
+    -> Scores: [-156, -143, -187, 221, -224, -199, -145, -184, -193, -300]
+ [Sample 308] True: 6 | Pred: 6 | Match! 
+    -> Scores: [-170, -170, -239, -255, -143, -248, 22, -235, -158, -350]
+ [Sample 309] True: 2 | Pred: 2 | Match! 
+    -> Scores: [-165, -113, 188, -155, -221, -299, -231, -210, -312, -290]
+ [Sample 310] True: 1 | Pred: 1 | Match! 
+    -> Scores: [-201, 141, -53, -211, -255, -281, -305, -219, -143, -356]
+ [Sample 311] True: 2 | Pred: 2 | Match! 
+    -> Scores: [-178, -110, 164, -231, -229, -303, -21, -271, -182, -287]
+ [Sample 312] True: 3 | Pred: 3 | Match! 
+    -> Scores: [-172, -151, -211, 272, -200, -245, -154, -159, -234, -281]
+ [Sample 313] True: 8 | Pred: 8 | Match! 
+    -> Scores: [-183, -55, -223, -200, -270, -228, -364, -261, 196, -358]
+ [Sample 314] True: 8 | Pred: 8 | Match! 
+    -> Scores: [-160, -164, -223, -219, -247, -226, -177, -264, 229, -370]
+ [Sample 315] True: 5 | Pred: 5 | Match! 
+    -> Scores: [-217, -215, -322, -174, -151, 236, -105, -212, -238, -260]
+ [Sample 316] True: 3 | Pred: 3 | Match! 
+    -> Scores: [-150, -138, -219, 260, -156, -207, -160, -237, -234, -271]
+ [Sample 317] True: 9 | Pred: 9 | Match! 
+    -> Scores: [-142, -150, -309, -196, -185, -212, -125, -154, -218, 294]
+ [Sample 318] True: 0 | Pred: 0 | Match! 
+    -> Scores: [120, -148, -211, -148, -159, -163, -133, -119, -185, -267]
+ [Sample 319] True: 3 | Pred: 3 | Match! 
+    -> Scores: [-235, -141, -188, 236, -258, -185, -177, -194, -230, -330]
+ [Sample 320] True: 3 | Pred: 3 | Match! 
+    -> Scores: [-154, -97, -268, 295, -214, -191, -155, -163, -245, -246]
+ [Sample 321] True: 6 | Pred: 6 | Match! 
+    -> Scores: [-107, -200, -262, -222, -101, -301, 219, -266, -145, -266]
+ [Sample 322] True: 1 | Pred: 2 | FAIL!  
+    -> Scores: [-179, 47, 52, -134, -315, -376, 25, -241, -185, -325]
+ [Sample 323] True: 7 | Pred: 7 | Match! 
+    -> Scores: [-237, -215, -253, -168, -87, -226, -147, 137, -162, -250]
+ [Sample 324] True: 3 | Pred: 3 | Match! 
+    -> Scores: [-294, -127, -292, 268, -221, -157, -181, -203, -194, -237]
+ [Sample 325] True: 0 | Pred: 0 | Match! 
+    -> Scores: [179, -185, -266, -96, -196, -202, -137, -122, -224, -222]
+ [Sample 326] True: 3 | Pred: 3 | Match! 
+    -> Scores: [-225, -163, -249, 283, -250, -262, -165, -140, -238, -220]
+ [Sample 327] True: 3 | Pred: 3 | Match! 
+    -> Scores: [-222, -208, -214, 92, -211, -173, -132, -162, -195, -109]
+ [Sample 328] True: 0 | Pred: 0 | Match! 
+    -> Scores: [247, -182, -296, -165, -190, -216, -134, -194, -225, -224]
+ [Sample 329] True: 5 | Pred: 5 | Match! 
+    -> Scores: [-197, -196, -340, -187, -104, 174, -110, -182, -232, -295]
+ [Sample 330] True: 8 | Pred: 8 | Match! 
+    -> Scores: [-160, -121, -172, -107, -398, -353, -254, -63, 118, -323]
+ [Sample 331] True: 2 | Pred: 2 | Match! 
+    -> Scores: [-170, -76, 149, -132, -236, -280, -61, -255, -184, -332]
+ [Sample 332] True: 5 | Pred: 5 | Match! 
+    -> Scores: [-202, -189, -316, -179, -157, 240, -102, -176, -215, -267]
+ [Sample 333] True: 0 | Pred: 0 | Match! 
+    -> Scores: [190, -192, -332, -145, -139, -160, -122, -198, -253, -214]
+ [Sample 334] True: 0 | Pred: 0 | Match! 
+    -> Scores: [156, -162, -205, -123, -163, -193, -116, -188, -247, -171]
+ [Sample 335] True: 4 | Pred: 4 | Match! 
+    -> Scores: [-140, -202, -302, -225, 140, -194, -65, -241, -249, -340]
+ [Sample 336] True: 2 | Pred: 1 | FAIL!  
+    -> Scores: [-189, 95, 75, -186, -240, -311, -239, -219, -264, -300]
+ [Sample 337] True: 6 | Pred: 6 | Match! 
+    -> Scores: [-223, -175, -216, -156, -164, -321, 87, -347, -195, -254]
+ [Sample 338] True: 2 | Pred: 2 | Match! 
+    -> Scores: [-241, -91, 146, -145, -290, -265, -160, -198, -219, -347]
+ [Sample 339] True: 6 | Pred: 6 | Match! 
+    -> Scores: [-126, -202, -179, -156, -202, -339, 91, -295, -157, -263]
+ [Sample 340] True: 7 | Pred: 7 | Match! 
+    -> Scores: [-222, -187, -127, -152, -168, -154, -256, 142, -208, -273]
+ [Sample 341] True: 1 | Pred: 1 | Match! 
+    -> Scores: [-171, 56, -25, -179, -369, -362, -118, -142, -132, -341]
+ [Sample 342] True: 4 | Pred: 4 | Match! 
+    -> Scores: [-158, -199, -371, -190, 168, -165, -52, -219, -270, -259]
+ [Sample 343] True: 1 | Pred: 1 | Match! 
+    -> Scores: [-130, 55, -93, -202, -246, -290, -153, -235, -185, -343]
+ [Sample 344] True: 9 | Pred: 9 | Match! 
+    -> Scores: [-165, -150, -310, -138, -173, -223, -118, -170, -219, 258]
+ [Sample 345] True: 3 | Pred: 3 | Match! 
+    -> Scores: [-178, -98, -262, 315, -225, -181, -166, -159, -251, -230]
+ [Sample 346] True: 0 | Pred: 0 | Match! 
+    -> Scores: [102, -117, -218, -165, -273, -310, -155, -42, -175, -316]
+ [Sample 347] True: 6 | Pred: 6 | Match! 
+    -> Scores: [-117, -190, -184, -234, -220, -355, 47, -145, -166, -332]
+ [Sample 348] True: 3 | Pred: 3 | Match! 
+    -> Scores: [-288, -220, -252, 310, -216, -131, -88, -202, -217, -305]
+ [Sample 349] True: 0 | Pred: 0 | Match! 
+    -> Scores: [220, -153, -212, -117, -175, -254, -127, -182, -248, -299]
+ [Sample 350] True: 8 | Pred: 8 | Match! 
+    -> Scores: [-188, -186, -252, -195, -256, -233, -133, -245, 164, -354]
+ [Sample 351] True: 0 | Pred: 0 | Match! 
+    -> Scores: [188, -140, -203, -130, -182, -246, -131, -173, -252, -297]
+ [Sample 352] True: 9 | Pred: 9 | Match! 
+    -> Scores: [-171, -148, -314, -111, -163, -217, -109, -176, -218, 170]
+ [Sample 353] True: 0 | Pred: 0 | Match! 
+    -> Scores: [241, -149, -206, -172, -161, -265, -134, -212, -244, -267]
+ [Sample 354] True: 6 | Pred: 6 | Match! 
+    -> Scores: [-261, -214, -199, -196, -133, -296, 142, -328, -164, -314]
+ [Sample 355] True: 1 | Pred: 1 | Match! 
+    -> Scores: [-169, 39, -55, -208, -191, -259, -101, -199, -357, -320]
+ [Sample 356] True: 7 | Pred: 7 | Match! 
+    -> Scores: [-219, -203, -144, -207, -156, -231, -210, 250, -216, -293]
+ [Sample 357] True: 7 | Pred: 7 | Match! 
+    -> Scores: [-148, -159, -153, -192, -247, -152, -195, 130, -266, -313]
+ [Sample 358] True: 3 | Pred: 3 | Match! 
+    -> Scores: [-141, -92, -262, 132, -176, -242, -156, -140, -246, -247]
+ [Sample 359] True: 4 | Pred: 4 | Match! 
+    -> Scores: [-124, -153, -139, -210, 6, -103, -194, -50, -242, -367]
+ [Sample 360] True: 1 | Pred: 2 | FAIL!  
+    -> Scores: [-159, 85, 95, -187, -217, -258, -194, -272, -231, -307]
+ [Sample 361] True: 1 | Pred: 1 | Match! 
+    -> Scores: [-251, 83, 77, -203, -219, -274, -211, -246, -258, -235]
+ [Sample 362] True: 2 | Pred: 2 | Match! 
+    -> Scores: [-183, -41, 123, -189, -255, -278, -89, -201, -173, -335]
+ [Sample 363] True: 2 | Pred: 2 | Match! 
+    -> Scores: [-213, -83, 111, -173, -279, -230, -92, -244, -218, -341]
+ [Sample 364] True: 1 | Pred: 1 | Match! 
+    -> Scores: [-136, 81, -96, -218, -233, -282, -238, -250, -98, -347]
+ [Sample 365] True: 2 | Pred: 2 | Match! 
+    -> Scores: [-174, -38, 108, -176, -214, -286, 0, -198, -237, -361]
+ [Sample 366] True: 0 | Pred: 0 | Match! 
+    -> Scores: [96, -155, -206, -56, -201, -246, -126, -194, -215, -333]
+ [Sample 367] True: 6 | Pred: 6 | Match! 
+    -> Scores: [-246, -195, -267, -95, -190, -240, 79, -284, -152, -305]
+ [Sample 368] True: 1 | Pred: 1 | Match! 
+    -> Scores: [-177, 80, -93, -249, -204, -257, -125, -176, -321, -351]
+ [Sample 369] True: 3 | Pred: 3 | Match! 
+    -> Scores: [-141, -141, -202, 109, -181, -190, -148, -168, -261, -216]
+ [Sample 370] True: 8 | Pred: 8 | Match! 
+    -> Scores: [-156, -155, -208, -221, -237, -255, -144, -301, 134, -349]
+ [Sample 371] True: 5 | Pred: 5 | Match! 
+    -> Scores: [-206, -218, -327, -135, -156, 194, -148, -146, -213, -267]
+ [Sample 372] True: 7 | Pred: 7 | Match! 
+    -> Scores: [-192, -191, -253, -208, -151, -165, -275, 246, -91, -317]
+ [Sample 373] True: 9 | Pred: 9 | Match! 
+    -> Scores: [-128, -145, -264, -77, -191, -202, -145, -157, -240, 155]
+ [Sample 374] True: 8 | Pred: 8 | Match! 
+    -> Scores: [-151, -175, -240, -211, -319, -328, -142, -201, 184, -331]
+ [Sample 375] True: 9 | Pred: 9 | Match! 
+    -> Scores: [-155, -150, -309, -180, -184, -220, -128, -160, -219, 290]
+ [Sample 376] True: 2 | Pred: 2 | Match! 
+    -> Scores: [-151, -89, 135, -191, -394, -335, -116, -170, -146, -370]
+ [Sample 377] True: 1 | Pred: 1 | Match! 
+    -> Scores: [-175, 9, -66, -186, -188, -317, -135, -230, -317, -286]
+ [Sample 378] True: 3 | Pred: 3 | Match! 
+    -> Scores: [-239, -170, -184, 203, -226, -140, -114, -204, -185, -305]
+ [Sample 379] True: 5 | Pred: 5 | Match! 
+    -> Scores: [-232, -200, -328, -130, -119, 194, -113, -172, -249, -288]
+ [Sample 380] True: 2 | Pred: 2 | Match! 
+    -> Scores: [-89, -88, 58, -231, -156, -321, -145, -189, -294, -366]
+ [Sample 381] True: 3 | Pred: 3 | Match! 
+    -> Scores: [-138, -173, -209, 178, -229, -221, -128, -180, -202, -287]
+ [Sample 382] True: 3 | Pred: 3 | Match! 
+    -> Scores: [-212, -140, -315, 204, -263, -217, -177, -115, -242, -213]
+ [Sample 383] True: 3 | Pred: 3 | Match! 
+    -> Scores: [-190, -137, -327, 183, -252, -239, -168, -129, -232, -226]
+ [Sample 384] True: 0 | Pred: 0 | Match! 
+    -> Scores: [329, -148, -199, -240, -167, -270, -119, -168, -251, -282]
+ [Sample 385] True: 0 | Pred: 0 | Match! 
+    -> Scores: [252, -154, -228, -183, -170, -225, -104, -189, -259, -291]
+ [Sample 386] True: 7 | Pred: 7 | Match! 
+    -> Scores: [-234, -197, -232, -189, -61, -259, -159, 60, -210, -306]
+ [Sample 387] True: 8 | Pred: 8 | Match! 
+    -> Scores: [-166, -170, -302, -199, -278, -325, -143, -163, 60, -353]
+ [Sample 388] True: 2 | Pred: 1 | FAIL!  
+    -> Scores: [-152, 63, 62, -196, -216, -241, -167, -225, -283, -275]
+ [Sample 389] True: 6 | Pred: 2 | FAIL!  
+    -> Scores: [-191, -15, 38, -112, -155, -298, -34, -303, -267, -333]
+ [Sample 390] True: 1 | Pred: 1 | Match! 
+    -> Scores: [-166, 80, -95, -191, -207, -298, -216, -316, -107, -356]
+ [Sample 391] True: 2 | Pred: 2 | Match! 
+    -> Scores: [-306, 54, 97, -160, -201, -262, -240, -255, -272, -228]
+ [Sample 392] True: 5 | Pred: 5 | Match! 
+    -> Scores: [-171, -177, -317, -161, -107, 136, -123, -180, -215, -304]
+ [Sample 393] True: 2 | Pred: 2 | Match! 
+    -> Scores: [-171, -84, 135, -168, -186, -341, -244, -257, -206, -370]
+ [Sample 394] True: 3 | Pred: 3 | Match! 
+    -> Scores: [-184, -188, -245, 175, -203, -223, -155, -198, -219, -222]
+ [Sample 395] True: 1 | Pred: 1 | Match! 
+    -> Scores: [-168, 9, -244, -15, -209, -206, -160, -134, -156, -251]
+ [Sample 396] True: 8 | Pred: 8 | Match! 
+    -> Scores: [-198, -60, -133, -163, -276, -243, -302, -238, 115, -379]
+ [Sample 397] True: 3 | Pred: 3 | Match! 
+    -> Scores: [-213, -126, -199, 271, -173, -164, -148, -220, -248, -244]
+ [Sample 398] True: 6 | Pred: 6 | Match! 
+    -> Scores: [-189, -201, -267, -162, -186, -323, 135, -302, -129, -301]
+ [Sample 399] True: 6 | Pred: 6 | Match! 
+    -> Scores: [-140, -201, -119, -204, -188, -300, 157, -237, -267, -345]
+ [Sample 400] True: 3 | Pred: 3 | Match! 
+    -> Scores: [-173, -126, -264, 188, -214, -184, -111, -179, -216, -291]
+ [Sample 401] True: 1 | Pred: 1 | Match! 
+    -> Scores: [-165, 163, -87, -225, -222, -308, -265, -145, -202, -373]
+ [Sample 402] True: 5 | Pred: 5 | Match! 
+    -> Scores: [-219, -204, -256, -173, -215, 235, -182, -138, -221, -286]
+ [Sample 403] True: 2 | Pred: 1 | FAIL!  
+    -> Scores: [-172, 83, 59, -163, -233, -313, -219, -249, -308, -296]
+ [Sample 404] True: 0 | Pred: 0 | Match! 
+    -> Scores: [294, -154, -198, -185, -170, -217, -106, -195, -253, -290]
+ [Sample 405] True: 6 | Pred: 6 | Match! 
+    -> Scores: [-173, -202, -205, -238, -154, -220, 41, -310, -144, -306]
+ [Sample 406] True: 7 | Pred: 7 | Match! 
+    -> Scores: [-188, -156, -105, -153, -126, -256, -258, 184, -253, -320]
+ [Sample 407] True: 3 | Pred: 0 | FAIL!  
+    -> Scores: [27, -66, -318, -53, -120, -245, -100, -181, -216, -55]
+ [Sample 408] True: 0 | Pred: 0 | Match! 
+    -> Scores: [294, -194, -265, -206, -204, -204, -122, -153, -238, -242]
+ [Sample 409] True: 0 | Pred: 0 | Match! 
+    -> Scores: [3, -146, -182, -160, -190, -207, -138, -163, -139, -312]
+ [Sample 410] True: 3 | Pred: 3 | Match! 
+    -> Scores: [-209, -143, -220, 246, -161, -126, -123, -230, -232, -235]
+ [Sample 411] True: 6 | Pred: 6 | Match! 
+    -> Scores: [-122, -200, -266, -187, -108, -304, 116, -298, -72, -296]
+ [Sample 412] True: 0 | Pred: 0 | Match! 
+    -> Scores: [217, -197, -274, -199, -178, -172, -125, -199, -237, -232]
+ [Sample 413] True: 0 | Pred: 0 | Match! 
+    -> Scores: [220, -174, -295, -137, -133, -245, -108, -252, -227, -209]
+ [Sample 414] True: 4 | Pred: 4 | Match! 
+    -> Scores: [-169, -196, -361, -187, 123, -151, -82, -112, -192, -245]
+ [Sample 415] True: 3 | Pred: 3 | Match! 
+    -> Scores: [-116, -149, -202, 212, -193, -228, -132, -184, -252, -269]
+ [Sample 416] True: 1 | Pred: 1 | Match! 
+    -> Scores: [-238, 73, 44, -177, -220, -287, -224, -235, -293, -239]
+ [Sample 417] True: 6 | Pred: 6 | Match! 
+    -> Scores: [-81, -194, -202, -179, -207, -351, 21, -262, -65, -313]
+ [Sample 418] True: 0 | Pred: 0 | Match! 
+    -> Scores: [291, -177, -293, -219, -178, -219, -111, -180, -228, -169]
+ [Sample 419] True: 1 | Pred: 1 | Match! 
+    -> Scores: [-145, -8, -48, -191, -200, -278, -162, -282, -224, -342]
+ [Sample 420] True: 1 | Pred: 2 | FAIL!  
+    -> Scores: [-149, 37, 75, -149, -222, -299, -118, -154, -248, -381]
+ [Sample 421] True: 3 | Pred: 3 | Match! 
+    -> Scores: [-103, -150, -208, 166, -234, -225, -150, -181, -237, -289]
+ [Sample 422] True: 8 | Pred: 8 | Match! 
+    -> Scores: [-184, -180, -233, -203, -353, -256, -180, -194, 187, -356]
+ [Sample 423] True: 0 | Pred: 0 | Match! 
+    -> Scores: [237, -194, -301, -158, -202, -204, -110, -117, -249, -244]
+ [Sample 424] True: 0 | Pred: 0 | Match! 
+    -> Scores: [252, -184, -291, -171, -182, -265, -124, -123, -219, -209]
+ [Sample 425] True: 7 | Pred: 7 | Match! 
+    -> Scores: [-228, -141, -132, -204, -124, -184, -213, 234, -235, -342]
+ [Sample 426] True: 8 | Pred: 8 | Match! 
+    -> Scores: [-192, -183, -284, -153, -181, -337, -86, -327, 99, -261]
+ [Sample 427] True: 3 | Pred: 3 | Match! 
+    -> Scores: [-114, -169, -207, 235, -176, -233, -131, -227, -196, -253]
+ [Sample 428] True: 8 | Pred: 8 | Match! 
+    -> Scores: [-205, -174, -220, -230, -224, -181, -124, -263, 104, -357]
+ [Sample 429] True: 1 | Pred: 1 | Match! 
+    -> Scores: [-250, 143, -75, -181, -217, -258, -264, -212, -213, -314]
+ [Sample 430] True: 0 | Pred: 0 | Match! 
+    -> Scores: [219, -152, -235, -156, -207, -220, -119, -212, -238, -308]
+ [Sample 431] True: 3 | Pred: 9 | FAIL!  
+    -> Scores: [-35, -83, -310, -102, -163, -248, -117, -136, -223, 30]
+ [Sample 432] True: 8 | Pred: 8 | Match! 
+    -> Scores: [-158, -86, -336, -207, -178, -317, -239, -189, 171, -279]
+ [Sample 433] True: 4 | Pred: 4 | Match! 
+    -> Scores: [-102, -157, -122, -213, 96, -193, -161, -186, -292, -324]
+ [Sample 434] True: 8 | Pred: 8 | Match! 
+    -> Scores: [-160, -163, -196, -209, -338, -241, -200, -91, -27, -256]
+ [Sample 435] True: 3 | Pred: 3 | Match! 
+    -> Scores: [-297, -95, -252, 322, -226, -143, -180, -162, -244, -243]
+ [Sample 436] True: 4 | Pred: 4 | Match! 
+    -> Scores: [-178, -180, -230, -218, 169, -196, -134, -223, -291, -320]
+ [Sample 437] True: 3 | Pred: 3 | Match! 
+    -> Scores: [-154, -153, -271, 89, -154, -168, -94, -228, -228, -134]
+ [Sample 438] True: 4 | Pred: 4 | Match! 
+    -> Scores: [-155, -208, -361, -195, 88, -131, -92, -144, -221, -253]
+ [Sample 439] True: 2 | Pred: 2 | Match! 
+    -> Scores: [-208, -109, 170, -164, -217, -269, -171, -268, -202, -340]
+ [Sample 440] True: 9 | Pred: 9 | Match! 
+    -> Scores: [-165, -150, -310, -138, -173, -223, -118, -170, -219, 258]
+ [Sample 441] True: 4 | Pred: 4 | Match! 
+    -> Scores: [-138, -196, -361, -192, 307, -287, -82, -227, -243, -310]
+ [Sample 442] True: 1 | Pred: 1 | Match! 
+    -> Scores: [-125, 66, 53, -240, -209, -265, -153, -164, -237, -342]
+ [Sample 443] True: 4 | Pred: 4 | Match! 
+    -> Scores: [-105, -190, -358, -221, 432, -309, -116, -276, -261, -315]
+ [Sample 444] True: 0 | Pred: 0 | Match! 
+    -> Scores: [138, -156, -199, -100, -188, -219, -129, -169, -223, -254]
+ [Sample 445] True: 2 | Pred: 1 | FAIL!  
+    -> Scores: [-197, 40, -27, -208, -207, -291, -168, -244, -184, -352]
+ [Sample 446] True: 6 | Pred: 6 | Match! 
+    -> Scores: [-194, -207, -234, -246, -117, -242, 85, -238, -150, -311]
+ [Sample 447] True: 2 | Pred: 2 | Match! 
+    -> Scores: [-189, -67, 67, -238, -188, -324, -30, -223, -235, -300]
+ [Sample 448] True: 0 | Pred: 0 | Match! 
+    -> Scores: [185, -156, -224, -189, -167, -194, -106, -211, -245, -316]
+ [Sample 449] True: 1 | Pred: 2 | FAIL!  
+    -> Scores: [-124, 89, 108, -164, -196, -328, -205, -248, -347, -282]
+ [Sample 450] True: 8 | Pred: 6 | FAIL!  
+    -> Scores: [-223, -216, -107, -221, -218, -271, 26, -267, 5, -335]
+ [Sample 451] True: 6 | Pred: 6 | Match! 
+    -> Scores: [-174, -199, -127, -187, -150, -293, 38, -365, -184, -354]
+ [Sample 452] True: 4 | Pred: 4 | Match! 
+    -> Scores: [-194, -152, -193, -173, 88, -185, -160, -61, -256, -303]
+ [Sample 453] True: 0 | Pred: 0 | Match! 
+    -> Scores: [190, -188, -305, -149, -200, -205, -125, -122, -250, -255]
+ [Sample 454] True: 2 | Pred: 2 | Match! 
+    -> Scores: [-162, -43, 174, -138, -220, -269, -124, -239, -290, -351]
+ [Sample 455] True: 3 | Pred: 3 | Match! 
+    -> Scores: [-201, -125, -303, 216, -201, -190, -151, -186, -204, -227]
+ [Sample 456] True: 3 | Pred: 3 | Match! 
+    -> Scores: [-188, -100, -266, 228, -175, -244, -149, -157, -241, -243]
+ [Sample 457] True: 4 | Pred: 4 | Match! 
+    -> Scores: [-210, -199, -292, -235, 39, -139, -108, -131, -195, -373]
+ [Sample 458] True: 1 | Pred: 2 | FAIL!  
+    -> Scores: [-68, 33, 59, -231, -223, -305, -142, -147, -264, -371]
+ [Sample 459] True: 4 | Pred: 4 | Match! 
+    -> Scores: [-186, -188, -317, -206, 356, -217, -120, -335, -270, -285]
+ [Sample 460] True: 5 | Pred: 5 | Match! 
+    -> Scores: [-199, -168, -259, -184, -193, 237, -147, -160, -246, -291]
+ [Sample 461] True: 5 | Pred: 5 | Match! 
+    -> Scores: [-183, -158, -245, -125, -152, 176, -173, -173, -258, -301]
+ [Sample 462] True: 6 | Pred: 6 | Match! 
+    -> Scores: [-168, -200, -268, -171, -112, -348, 151, -346, -168, -301]
+ [Sample 463] True: 2 | Pred: 2 | Match! 
+    -> Scores: [-142, -93, 119, -134, -218, -269, -147, -209, -332, -312]
+ [Sample 464] True: 2 | Pred: 1 | FAIL!  
+    -> Scores: [-193, 68, 58, -155, -229, -299, -205, -231, -326, -292]
+ [Sample 465] True: 3 | Pred: 3 | Match! 
+    -> Scores: [-89, -208, -271, 153, -184, -232, -89, -202, -226, -263]
+ [Sample 466] True: 5 | Pred: 5 | Match! 
+    -> Scores: [-227, -186, -268, -178, -133, 237, -134, -176, -239, -298]
+ [Sample 467] True: 3 | Pred: 3 | Match! 
+    -> Scores: [-91, -94, -272, 117, -200, -174, -121, -184, -252, -266]
+ [Sample 468] True: 1 | Pred: 1 | Match! 
+    -> Scores: [-215, 88, 78, -142, -212, -241, -195, -263, -264, -308]
+ [Sample 469] True: 0 | Pred: 0 | Match! 
+    -> Scores: [205, -178, -330, -168, -130, -171, -113, -178, -247, -229]
+ [Sample 470] True: 6 | Pred: 6 | Match! 
+    -> Scores: [-175, -194, -183, -202, -341, -323, 116, -192, -168, -349]
+ [Sample 471] True: 2 | Pred: 2 | Match! 
+    -> Scores: [-215, -81, 163, -171, -208, -325, -242, -179, -177, -364]
+ [Sample 472] True: 3 | Pred: 3 | Match! 
+    -> Scores: [-223, -169, -187, 200, -193, -201, -133, -218, -251, -252]
+ [Sample 473] True: 0 | Pred: 0 | Match! 
+    -> Scores: [207, -154, -193, -159, -176, -228, -102, -185, -240, -324]
+ [Sample 474] True: 8 | Pred: 8 | Match! 
+    -> Scores: [-224, -141, -199, -156, -476, -266, -303, -108, 327, -393]
+ [Sample 475] True: 8 | Pred: 8 | Match! 
+    -> Scores: [-184, -31, -130, -171, -267, -257, -339, -241, 165, -379]
+ [Sample 476] True: 6 | Pred: 2 | FAIL!  
+    -> Scores: [-188, -58, 99, -160, -167, -325, 18, -295, -259, -359]
+ [Sample 477] True: 5 | Pred: 5 | Match! 
+    -> Scores: [-191, -207, -261, -152, -182, 193, -176, -165, -186, -272]
+ [Sample 478] True: 5 | Pred: 5 | Match! 
+    -> Scores: [-185, -165, -268, -124, -292, 81, -186, 32, -233, -230]
+ [Sample 479] True: 8 | Pred: 8 | Match! 
+    -> Scores: [-147, -70, -241, -215, -328, -289, -248, -178, 121, -328]
+ [Sample 480] True: 0 | Pred: 0 | Match! 
+    -> Scores: [96, -183, -272, -137, -246, -202, -123, -129, -227, -286]
+ [Sample 481] True: 2 | Pred: 6 | FAIL!  
+    -> Scores: [-213, -61, -30, -121, -317, -278, 139, -202, -193, -270]
+ [Sample 482] True: 2 | Pred: 2 | Match! 
+    -> Scores: [-155, -78, 94, -234, -124, -239, -17, -256, -258, -296]
+ [Sample 483] True: 1 | Pred: 1 | Match! 
+    -> Scores: [-256, 132, 116, -143, -194, -242, -201, -276, -262, -249]
+ [Sample 484] True: 3 | Pred: 3 | Match! 
+    -> Scores: [-294, -181, -231, 272, -288, -191, -160, -121, -197, -218]
+ [Sample 485] True: 5 | Pred: 5 | Match! 
+    -> Scores: [-222, -190, -261, -155, -170, 240, -137, -175, -225, -268]
+ [Sample 486] True: 6 | Pred: 6 | Match! 
+    -> Scores: [-192, -188, -208, -140, -155, -305, 199, -282, -234, -271]
+ [Sample 487] True: 1 | Pred: 1 | Match! 
+    -> Scores: [-186, 90, 72, -171, -211, -328, -188, -254, -327, -293]
+ [Sample 488] True: 3 | Pred: 3 | Match! 
+    -> Scores: [2, -198, -349, 24, -130, -153, -115, -101, -226, -181]
+ [Sample 489] True: 0 | Pred: 0 | Match! 
+    -> Scores: [213, -162, -233, -149, -214, -164, -118, -185, -258, -294]
+ [Sample 490] True: 7 | Pred: 7 | Match! 
+    -> Scores: [-142, -217, -271, -215, 43, -233, -130, 57, -224, -293]
+ [Sample 491] True: 6 | Pred: 6 | Match! 
+    -> Scores: [-200, -214, -285, -208, -187, -239, 35, -227, -62, -345]
+ [Sample 492] True: 3 | Pred: 0 | FAIL!  
+    -> Scores: [-46, -147, -248, -124, -155, -179, -106, -132, -205, -199]
+ [Sample 493] True: 8 | Pred: 8 | Match! 
+    -> Scores: [-204, -189, -264, -214, -249, -238, -207, -147, 189, -349]
+ [Sample 494] True: 8 | Pred: 8 | Match! 
+    -> Scores: [-196, -163, -234, -218, -228, -155, -143, -241, 107, -335]
+ [Sample 495] True: 3 | Pred: 3 | Match! 
+    -> Scores: [-187, -147, -184, 120, -209, -207, -160, -204, -201, -263]
+ [Sample 496] True: 7 | Pred: 7 | Match! 
+    -> Scores: [-103, -187, -250, -241, -77, -247, -156, 188, -228, -273]
+ [Sample 497] True: 0 | Pred: 0 | Match! 
+    -> Scores: [135, -192, -276, -165, -160, -252, -121, -171, -225, -219]
+ [Sample 498] True: 0 | Pred: 0 | Match! 
+    -> Scores: [69, -171, -273, -152, -191, -275, -121, -101, -167, -283]
+ [Sample 499] True: 3 | Pred: 3 | Match! 
+    -> Scores: [-252, -174, -203, 364, -201, -187, -180, -209, -275, -238]
+
+========================================
+? Simulation Finished Successfully!
+   Total Samples : 500
+   Correct Preds : 451
+   Accuracy      : 90 %
+========================================
+
+run: Time (s): cpu = 00:00:59 ; elapsed = 00:01:02 . Memory (MB): peak = 1048.824 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun May 10 14:36:39 2026...

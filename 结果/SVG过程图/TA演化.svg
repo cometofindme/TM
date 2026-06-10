@@ -1,0 +1,68 @@
+<svg width="1600" height="900" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <marker orient="auto-start-reverse" markerHeight="6" markerWidth="6" refY="5" refX="9" viewBox="0 0 10 10" id="arrow">
+   <path id="svg_1" fill="#000000" d="m0,0l10,5l-10,5l0,-10z"/>
+  </marker>
+ </defs>
+ <g>
+  <title>Layer 1</title>
+  <line id="svg_2" marker-end="url(#arrow)" stroke-width="2" stroke="#000000" y2="450" x2="1500" y1="450" x1="100"/>
+  <g id="svg_3">
+   <![CDATA[
+                for (var i = 1; i <= 20; i++) {
+                    var x = i * 70;
+                    document.write('<line x1="' + x + '" y1="-10" x2="' + x + '" y2="10" stroke="#000000" stroke-width="1.5"/>');
+                    document.write('<text x="' + x + '" y="25" class="axis-number">' + i + '</text>');
+                }
+            ]]>
+   <line id="svg_4" stroke-width="1.5" stroke="#000000" y2="460" x2="170" y1="440" x1="170"/>
+   <text id="svg_5" text-anchor="middle" font-size="16px" font-weight="normal" fill="#000000" font-family="'Times New Roman', SimSun, serif" class="axis-number" y="475" x="170">1</text>
+   <line id="svg_6" stroke-width="1.5" stroke="#000000" y2="460" x2="240" y1="440" x1="240"/>
+   <text id="svg_7" text-anchor="middle" font-size="16px" font-weight="normal" fill="#000000" font-family="'Times New Roman', SimSun, serif" class="axis-number" y="475" x="240">2</text>
+   <line id="svg_8" stroke-width="1.5" stroke="#000000" y2="460" x2="310" y1="440" x1="310"/>
+   <text id="svg_9" text-anchor="middle" font-size="16px" font-weight="normal" fill="#000000" font-family="'Times New Roman', SimSun, serif" class="axis-number" y="475" x="310">3</text>
+   <line id="svg_10" stroke-width="1.5" stroke="#000000" y2="460" x2="380" y1="440" x1="380"/>
+   <text id="svg_11" text-anchor="middle" font-size="16px" font-weight="normal" fill="#000000" font-family="'Times New Roman', SimSun, serif" class="axis-number" y="475" x="380">4</text>
+   <line id="svg_12" stroke-width="1.5" stroke="#000000" y2="460" x2="450" y1="440" x1="450"/>
+   <text id="svg_13" text-anchor="middle" font-size="16px" font-weight="normal" fill="#000000" font-family="'Times New Roman', SimSun, serif" class="axis-number" y="475" x="450">5</text>
+   <line id="svg_14" stroke-width="1.5" stroke="#000000" y2="460" x2="520" y1="440" x1="520"/>
+   <text id="svg_15" text-anchor="middle" font-size="16px" font-weight="normal" fill="#000000" font-family="'Times New Roman', SimSun, serif" class="axis-number" y="475" x="520">6</text>
+   <line id="svg_16" stroke-width="1.5" stroke="#000000" y2="460" x2="590" y1="440" x1="590"/>
+   <text id="svg_17" text-anchor="middle" font-size="16px" font-weight="normal" fill="#000000" font-family="'Times New Roman', SimSun, serif" class="axis-number" y="475" x="590">7</text>
+   <line id="svg_18" stroke-width="1.5" stroke="#000000" y2="460" x2="660" y1="440" x1="660"/>
+   <text id="svg_19" text-anchor="middle" font-size="16px" font-weight="normal" fill="#000000" font-family="'Times New Roman', SimSun, serif" class="axis-number" y="475" x="660">8</text>
+   <line id="svg_20" stroke-width="1.5" stroke="#000000" y2="460" x2="730" y1="440" x1="730"/>
+   <text id="svg_21" text-anchor="middle" font-size="16px" font-weight="normal" fill="#000000" font-family="'Times New Roman', SimSun, serif" class="axis-number" y="475" x="730">9</text>
+   <line id="svg_22" stroke-width="1.5" stroke="#000000" y2="460" x2="800" y1="440" x1="800"/>
+   <text id="svg_23" text-anchor="middle" font-size="16px" font-weight="normal" fill="#000000" font-family="'Times New Roman', SimSun, serif" class="axis-number" y="475" x="800">10</text>
+   <line id="svg_24" stroke-width="1.5" stroke="#000000" y2="460" x2="870" y1="440" x1="870"/>
+   <text id="svg_25" text-anchor="middle" font-size="16px" font-weight="normal" fill="#000000" font-family="'Times New Roman', SimSun, serif" class="axis-number" y="475" x="870">11</text>
+   <line id="svg_26" stroke-width="1.5" stroke="#000000" y2="460" x2="940" y1="440" x1="940"/>
+   <text id="svg_27" text-anchor="middle" font-size="16px" font-weight="normal" fill="#000000" font-family="'Times New Roman', SimSun, serif" class="axis-number" y="475" x="940">12</text>
+   <line id="svg_28" stroke-width="1.5" stroke="#000000" y2="460" x2="1010" y1="440" x1="1010"/>
+   <text id="svg_29" text-anchor="middle" font-size="16px" font-weight="normal" fill="#000000" font-family="'Times New Roman', SimSun, serif" class="axis-number" y="475" x="1010">13</text>
+   <line id="svg_30" stroke-width="1.5" stroke="#000000" y2="460" x2="1080" y1="440" x1="1080"/>
+   <text id="svg_31" text-anchor="middle" font-size="16px" font-weight="normal" fill="#000000" font-family="'Times New Roman', SimSun, serif" class="axis-number" y="475" x="1080">14</text>
+   <line id="svg_32" stroke-width="1.5" stroke="#000000" y2="460" x2="1150" y1="440" x1="1150"/>
+   <text id="svg_33" text-anchor="middle" font-size="16px" font-weight="normal" fill="#000000" font-family="'Times New Roman', SimSun, serif" class="axis-number" y="475" x="1150">15</text>
+   <line id="svg_34" stroke-width="1.5" stroke="#000000" y2="460" x2="1220" y1="440" x1="1220"/>
+   <text id="svg_35" text-anchor="middle" font-size="16px" font-weight="normal" fill="#000000" font-family="'Times New Roman', SimSun, serif" class="axis-number" y="475" x="1220">16</text>
+   <line id="svg_36" stroke-width="1.5" stroke="#000000" y2="460" x2="1290" y1="440" x1="1290"/>
+   <text id="svg_37" text-anchor="middle" font-size="16px" font-weight="normal" fill="#000000" font-family="'Times New Roman', SimSun, serif" class="axis-number" y="475" x="1290">17</text>
+   <line id="svg_38" stroke-width="1.5" stroke="#000000" y2="460" x2="1360" y1="440" x1="1360"/>
+   <text id="svg_39" text-anchor="middle" font-size="16px" font-weight="normal" fill="#000000" font-family="'Times New Roman', SimSun, serif" class="axis-number" y="475" x="1360">18</text>
+   <line id="svg_40" stroke-width="1.5" stroke="#000000" y2="460" x2="1430" y1="440" x1="1430"/>
+   <text id="svg_41" text-anchor="middle" font-size="16px" font-weight="normal" fill="#000000" font-family="'Times New Roman', SimSun, serif" class="axis-number" y="475" x="1430">19</text>
+   <line id="svg_42" stroke-width="1.5" stroke="#000000" y2="460" x2="1500" y1="440" x1="1500"/>
+   <text id="svg_43" text-anchor="middle" font-size="16px" font-weight="normal" fill="#000000" font-family="'Times New Roman', SimSun, serif" class="axis-number" y="475" x="1500">20</text>
+  </g>
+  <rect id="svg_44" stroke-width="1.5" stroke="#adb5bd" fill-opacity="0.6" fill="#f0f8ff" ry="5" rx="5" height="260" width="660" y="320" x="140"/>
+  <text id="svg_45" text-anchor="middle" font-size="30" font-weight="normal" fill="#000000" font-family="'Times New Roman', SimSun, serif" class="label" y="360" x="470">Exclude (排除)</text>
+  <text id="svg_46" text-anchor="middle" font-size="30" font-weight="normal" fill="#000000" font-family="'Times New Roman', SimSun, serif" class="output-text" y="550" x="470">Output = 0</text>
+  <rect id="svg_47" stroke-width="1.5" stroke="#adb5bd" fill-opacity="0.6" fill="#fffafa" ry="5" rx="5" height="260" width="660" y="320" x="800"/>
+  <text id="svg_48" text-anchor="middle" font-size="30" font-weight="normal" fill="#000000" font-family="'Times New Roman', SimSun, serif" class="label" y="360" x="1130">Include (包含)</text>
+  <text id="svg_49" text-anchor="middle" font-size="30" font-weight="normal" fill="#000000" font-family="'Times New Roman', SimSun, serif" class="output-text" y="550" x="1130">Output = 1</text>
+  <line id="svg_50" stroke-dasharray="8,4" stroke-width="2" stroke="#000000" y2="580" x2="800" y1="320" x1="800"/>
+  <text id="svg_51" text-anchor="middle" font-size="30" font-weight="normal" fill="#000000" font-family="'Times New Roman', SimSun, serif" class="threshold-text" y="610" x="800">决策阈值 (Threshold)</text>
+ </g>
+</svg>

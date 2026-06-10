@@ -1,0 +1,114 @@
+<svg width="1450" height="949.9999999999999" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+   <path d="m0,0l10,5l-10,5l0,-10z" fill="#000000" id="svg_1"/>
+  </marker>
+ </defs>
+ <g>
+  <title>Layer 1</title>
+  <rect width="300" height="110" rx="10" ry="10" class="state-body" fill="#f4f9fd" stroke="#5a98d3" stroke-width="1.5" y="720.26987" x="850.1474" id="svg_64"/>
+  <path d="m1150,780l200,0l0,-600l-400,0" class="line-solid" stroke="#000000" stroke-width="1.5" fill="none" marker-end="url(#arrow)" id="svg_105"/>
+  <rect width="409.6154" height="200" rx="10" ry="10" class="state-body" fill="#f4f9fd" stroke-width="1.5" y="60" x="540.3846" id="svg_3" stroke="#5a98d3"/>
+  <path d="m540.90057,70a8.18199,10 0 0 1 8.18199,-10l392.73545,0a8.18199,10 0 0 1 8.18199,10l0,20l-409.09943,0l0,-20z" class="state-header" fill="#a4c8e7" id="svg_4" stroke="null"/>
+  <line x1="541.46342" y1="90" x2="950" y2="90" stroke-width="1.5" id="svg_5" stroke="#5a98d3"/>
+  <text x="685.71429" y="80" class="header-text" font-family="'Times New Roman', SimSun, serif" fill="#000000" font-weight="normal" font-size="16px" text-anchor="middle" id="svg_6">IDLE</text>
+  <text x="790.47619" y="78.2381" class="main-text" font-family="'Times New Roman', SimSun, serif" fill="#000000" font-weight="normal" font-size="15px" text-anchor="middle" id="svg_7">rst_n = 0 (异步复位)</text>
+  <circle cx="603.57143" cy="134.04762" r="6" fill="#000000" id="svg_8"/>
+  <rect x="580" y="170" width="100" height="36" class="sub-state" fill="#eaf2f8" stroke="#5a98d3" stroke-width="1.5" rx="12" ry="12" id="svg_9"/>
+  <text x="630" y="193" class="main-text" font-family="'Times New Roman', SimSun, serif" fill="#000000" font-weight="normal" font-size="15px" text-anchor="middle" id="svg_10">WaitStart</text>
+  <rect x="780" y="170" width="100" height="36" class="sub-state" fill="#eaf2f8" stroke="#5a98d3" stroke-width="1.5" rx="12" ry="12" id="svg_11"/>
+  <text x="830" y="193" class="main-text" font-family="'Times New Roman', SimSun, serif" fill="#000000" font-weight="normal" font-size="15px" text-anchor="middle" id="svg_12">Initialize</text>
+  <circle cx="830" cy="240" r="8" fill="none" stroke="#000000" stroke-width="1.5" id="svg_13"/>
+  <circle cx="830" cy="240" r="4" fill="#000000" id="svg_14"/>
+  <path d="m588.82252,170c-29.25972,-50 58.51944,-50 29.25972,0" class="line-solid" stroke-width="1.5" fill="none" marker-end="url(#arrow)" id="svg_16" stroke="#000000"/>
+  <text x="635.71429" y="130.47619" class="sub-text" font-family="'Times New Roman', SimSun, serif" fill="#000000" font-weight="normal" font-size="14px" text-anchor="middle" id="svg_17">start = 0</text>
+  <path d="m680,188l100,0" class="line-solid" stroke="#000000" stroke-width="1.5" fill="none" marker-end="url(#arrow)" id="svg_18"/>
+  <text x="730" y="182" class="sub-text" font-family="'Times New Roman', SimSun, serif" fill="#000000" font-weight="normal" font-size="14px" text-anchor="middle" id="svg_19">start = 1</text>
+  <path d="m830,206l0,26" class="line-solid" stroke="#000000" stroke-width="1.5" fill="none" marker-end="url(#arrow)" id="svg_20"/>
+  <text x="764.28571" y="233.09524" class="sub-text" text-anchor="middle" font-family="'Times New Roman', SimSun, serif" fill="#000000" font-weight="normal" font-size="14px" id="svg_21">done=0, scores=0,</text>
+  <text x="797.61905" y="249.52381" class="sub-text" text-anchor="middle" font-family="'Times New Roman', SimSun, serif" fill="#000000" font-weight="normal" font-size="14px" id="svg_22">addr=0...</text>
+  <rect width="600" height="120" rx="10" ry="10" class="state-body" fill="#f4f9fd" stroke="#5a98d3" stroke-width="1.5" y="340" x="300" id="svg_23"/>
+  <path d="m300,350a10,10 0 0 1 10,-10l580,0a10,10 0 0 1 10,10l0,20l-600,0l0,-20z" class="state-header" fill="#a4c8e7" id="svg_24"/>
+  <line x1="300" y1="370" x2="900" y2="370" stroke="#5a98d3" stroke-width="1.5" id="svg_25"/>
+  <text x="600" y="360" class="header-text" font-family="'Times New Roman', SimSun, serif" fill="#000000" font-weight="normal" font-size="16px" text-anchor="middle" id="svg_26">FETCH</text>
+  <circle cx="330" cy="415" r="6" fill="#000000" id="svg_27"/>
+  <rect x="472.10526" y="396.12281" width="100" height="36" class="sub-state" fill="#eaf2f8" stroke="#5a98d3" stroke-width="1.5" rx="12" ry="12" id="svg_28"/>
+  <text x="522.10526" y="419.12281" class="main-text" font-family="'Times New Roman', SimSun, serif" fill="#000000" font-weight="normal" font-size="15px" text-anchor="middle" id="svg_29">LatchData</text>
+  <path d="m336,415l131.7193,0" class="line-solid" stroke-width="1.5" fill="none" marker-end="url(#arrow)" id="svg_32" stroke="#000000"/>
+  <path d="m573.85964,415l111.29826,0" class="line-solid" stroke-width="1.5" fill="none" marker-end="url(#arrow)" id="svg_33" stroke="#000000"/>
+  <text x="782.72905" y="420.1462" class="sub-text" text-anchor="middle" font-family="'Times New Roman', SimSun, serif" fill="#000000" font-weight="normal" font-size="14px" id="svg_34">读取偶数/奇数子句属性</text>
+  <g id="state-calc">
+   <rect width="250" height="110" rx="10" ry="10" class="state-body" fill="#f4f9fd" stroke="#5a98d3" stroke-width="1.5" y="540" x="250" id="svg_35"/>
+   <path d="m250,550a10,10 0 0 1 10,-10l230,0a10,10 0 0 1 10,10l0,20l-250,0l0,-20z" class="state-header" fill="#a4c8e7" id="svg_36"/>
+   <line x1="250" y1="570" x2="500" y2="570" stroke="#5a98d3" stroke-width="1.5" id="svg_37"/>
+   <text x="375" y="560" class="header-text" font-family="'Times New Roman', SimSun, serif" fill="#000000" font-weight="normal" font-size="16px" text-anchor="middle" id="svg_38">CALC</text>
+   <circle cx="280" cy="605" r="6" fill="#000000" id="svg_39"/>
+   <rect x="310" y="587" width="130" height="36" class="sub-state" fill="#eaf2f8" stroke="#5a98d3" stroke-width="1.5" rx="12" ry="12" id="svg_40"/>
+   <text x="375" y="610" class="main-text" font-family="'Times New Roman', SimSun, serif" fill="#000000" font-weight="normal" font-size="15px" text-anchor="middle" id="svg_41">ScoreAccumulate</text>
+   <circle cx="470" cy="605" r="8" fill="none" stroke="#000000" stroke-width="1.5" id="svg_42"/>
+   <circle cx="470" cy="605" r="4" fill="#000000" id="svg_43"/>
+   <path d="m286,605l24,0" class="line-solid" stroke="#000000" stroke-width="1.5" fill="none" marker-end="url(#arrow)" id="svg_44"/>
+   <path d="m440,605l22,0" class="line-solid" stroke="#000000" stroke-width="1.5" fill="none" marker-end="url(#arrow)" id="svg_45"/>
+   <text x="375" y="640" class="sub-text" font-family="'Times New Roman', SimSun, serif" fill="#000000" font-weight="normal" font-size="14px" text-anchor="middle" id="svg_46">if (clause_act) scores +/- 1</text>
+  </g>
+  <rect width="200" height="110" rx="10" ry="10" class="state-body" fill="#f4f9fd" stroke="#5a98d3" stroke-width="1.5" y="540" x="560" id="svg_47"/>
+  <path d="m560,550a10,10 0 0 1 10,-10l180,0a10,10 0 0 1 10,10l0,20l-200,0l0,-20z" class="state-header" fill="#a4c8e7" id="svg_48"/>
+  <line x1="560" y1="570" x2="760" y2="570" stroke="#5a98d3" stroke-width="1.5" id="svg_49"/>
+  <text x="660" y="560" class="header-text" font-family="'Times New Roman', SimSun, serif" fill="#000000" font-weight="normal" font-size="16px" text-anchor="middle" id="svg_50">NEXT_CLASS</text>
+  <rect x="600" y="587" width="120" height="36" class="sub-state" fill="#eaf2f8" stroke="#5a98d3" stroke-width="1.5" rx="12" ry="12" id="svg_51"/>
+  <text x="658.55072" y="611.44928" class="main-text" font-family="'Times New Roman', SimSun, serif" fill="#000000" font-weight="normal" font-size="15px" text-anchor="middle" id="svg_52">CheckClassIdx</text>
+  <g id="state-argmax">
+   <rect width="300" height="110" rx="10" ry="10" class="state-body" fill="#f4f9fd" stroke="#5a98d3" stroke-width="1.5" y="540" x="850" id="svg_56"/>
+   <path d="m850,550a10,10 0 0 1 10,-10l280,0a10,10 0 0 1 10,10l0,20l-300,0l0,-20z" class="state-header" fill="#a4c8e7" id="svg_57"/>
+   <line x1="850" y1="570" x2="1150" y2="570" stroke="#5a98d3" stroke-width="1.5" id="svg_58"/>
+   <text x="1000" y="560" class="header-text" font-family="'Times New Roman', SimSun, serif" fill="#000000" font-weight="normal" font-size="16px" text-anchor="middle" id="svg_59">ARGMAX</text>
+   <rect x="950" y="587" width="110" height="36" class="sub-state" fill="#eaf2f8" stroke="#5a98d3" stroke-width="1.5" rx="12" ry="12" id="svg_60"/>
+   <text x="1005" y="610" class="main-text" font-family="'Times New Roman', SimSun, serif" fill="#000000" font-weight="normal" font-size="15px" text-anchor="middle" id="svg_61">CompareScore</text>
+   <path d="m1005,570l0,17" class="line-solid" stroke="#000000" stroke-width="1.5" fill="none" marker-end="url(#arrow)" id="svg_62"/>
+   <text x="1000" y="640" class="sub-text" font-family="'Times New Roman', SimSun, serif" fill="#000000" font-weight="normal" font-size="14px" text-anchor="middle" id="svg_63">max_score = scores[cmp_idx] if higher</text>
+  </g>
+  <path d="m850,730a10,10 0 0 1 10,-10l280,0a10,10 0 0 1 10,10l0,20l-300,0l0,-20z" class="state-header" fill="#a4c8e7" id="svg_65"/>
+  <line x1="850" y1="750" x2="1150" y2="750" stroke="#5a98d3" stroke-width="1.5" id="svg_66"/>
+  <text x="1000" y="740" class="header-text" font-family="'Times New Roman', SimSun, serif" fill="#000000" font-weight="normal" font-size="16px" text-anchor="middle" id="svg_67">FINISH</text>
+  <path d="m988.36375,788.62741l74.50678,0" class="line-solid" stroke-width="1.5" fill="none" marker-end="url(#arrow)" id="svg_73" stroke="#000000" transform="rotate(0.0815524 1025.62 788.627)"/>
+  <path d="m806.4945,264.81786l-26.79854,71.55478" class="line-solid" stroke-width="1.5" fill="none" marker-end="url(#arrow)" id="svg_79" stroke="#000000" transform="rotate(-20.8507 793.095 300.595)"/>
+  <text x="740" y="302.85714" class="main-text" font-family="'Times New Roman', SimSun, serif" fill="#000000" font-weight="normal" font-size="15px" text-anchor="middle" id="svg_80">[IDLE] 结束</text>
+  <path d="m375,460l0,80" class="line-solid" stroke="#000000" stroke-width="1.5" fill="none" marker-end="url(#arrow)" id="svg_81"/>
+  <text x="430" y="510" class="main-text" font-family="'Times New Roman', SimSun, serif" fill="#000000" font-weight="normal" font-size="15px" text-anchor="middle" id="svg_82">[FETCH] 结束</text>
+  <path d="m248.55072,582.89854q-150,0 -150,-90q0,-80 200,-80" class="line-solid" stroke-width="1.5" fill="none" marker-end="url(#arrow)" id="svg_83" stroke="#000000"/>
+  <text x="227.53622" y="473.04348" class="main-text" font-family="'Times New Roman', SimSun, serif" fill="#000000" font-weight="normal" font-size="15px" text-anchor="middle" id="svg_84">clause_cnt != 1499</text>
+  <text x="227.53622" y="493.04348" class="main-text" font-family="'Times New Roman', SimSun, serif" fill="#000000" font-weight="normal" font-size="15px" text-anchor="middle" id="svg_85">[跳转到下一子句]</text>
+  <text x="227.53622" y="513.04348" class="main-text" font-family="'Times New Roman', SimSun, serif" fill="#000000" font-weight="normal" font-size="15px" text-anchor="middle" id="svg_86">(clause_cnt++, mask_addr++)</text>
+  <path d="m500,595l60,0" class="line-solid" stroke="#000000" stroke-width="1.5" fill="none" marker-end="url(#arrow)" id="svg_87"/>
+  <text x="531.44928" y="670.65217" class="main-text" font-family="'Times New Roman', SimSun, serif" fill="#000000" font-weight="normal" font-size="15px" text-anchor="middle" id="svg_88">clause_cnt == 1499</text>
+  <text x="535.7971" y="691.66666" class="main-text" font-family="'Times New Roman', SimSun, serif" fill="#000000" font-weight="normal" font-size="15px" text-anchor="middle" id="svg_89">[当前类别算完]</text>
+  <path stroke="#000000" d="m660,540q0,-58 0.66667,-77.33333" class="line-solid" stroke-width="1.5" fill="none" marker-end="url(#arrow)" id="svg_90"/>
+  <text style="cursor: move;" x="802.31884" y="480.50725" class="main-text" font-family="'Times New Roman', SimSun, serif" fill="#000000" font-weight="normal" font-size="15px" text-anchor="middle" id="svg_91">class_idx != 9</text>
+  <text x="816.81159" y="500.50725" class="main-text" font-family="'Times New Roman', SimSun, serif" fill="#000000" font-weight="normal" font-size="15px" text-anchor="middle" id="svg_92">[跳转到下一类别]</text>
+  <text x="803.76811" y="521.95652" class="main-text" font-family="'Times New Roman', SimSun, serif" fill="#000000" font-weight="normal" font-size="15px" text-anchor="middle" id="svg_93">(class_idx++, addr=NewBase)</text>
+  <path d="m760,595l90,0" class="line-solid" stroke="#000000" stroke-width="1.5" fill="none" marker-end="url(#arrow)" id="svg_94"/>
+  <text style="cursor: move;" x="805" y="585.43478" class="main-text" font-family="'Times New Roman', SimSun, serif" fill="#000000" font-weight="normal" font-size="15px" text-anchor="middle" id="svg_95">class_idx == 9</text>
+  <text style="cursor: move;" x="1003.55072" y="534.42029" class="main-text" font-family="'Times New Roman', SimSun, serif" fill="#000000" font-weight="normal" font-size="15px" text-anchor="middle" id="svg_96">[10类全部算完,准备比分]</text>
+  <path d="m1150,630q80,0 80,-50q0,-50 -80,-30" class="line-solid" stroke="#000000" stroke-width="1.5" fill="none" marker-end="url(#arrow)" id="svg_98"/>
+  <text style="cursor: move;" x="1272.89855" y="572.89855" class="main-text" font-family="'Times New Roman', SimSun, serif" fill="#000000" font-weight="normal" font-size="15px" text-anchor="middle" id="svg_99">cmp_idx != 9</text>
+  <text x="1262.75362" y="643.62319" class="main-text" font-family="'Times New Roman', SimSun, serif" fill="#000000" font-weight="normal" font-size="15px" text-anchor="middle" id="svg_100">[跳转到下一分数比较]</text>
+  <text x="1271.44928" y="589.71015" class="main-text" font-family="'Times New Roman', SimSun, serif" fill="#000000" font-weight="normal" font-size="15px" text-anchor="middle" id="svg_101">(cmp_idx++)</text>
+  <path d="m1000,650l0,70" class="line-solid" stroke="#000000" stroke-width="1.5" fill="none" marker-end="url(#arrow)" id="svg_102"/>
+  <text style="cursor: move;" x="1052.02898" y="679.2029" class="main-text" text-anchor="middle" font-family="'Times New Roman', SimSun, serif" fill="#000000" font-weight="normal" font-size="15px" id="svg_103">cmp_idx == 10</text>
+  <text x="1111.44927" y="706.44928" class="main-text" text-anchor="middle" font-family="'Times New Roman', SimSun, serif" fill="#000000" font-weight="normal" font-size="15px" id="svg_104">[比较结束, 结果已在pred_class]</text>
+  <text x="1264.34783" y="478.84058" class="main-text" text-anchor="middle" font-family="'Times New Roman', SimSun, serif" fill="#000000" font-weight="normal" font-size="15px" id="svg_106">[FINISH] 结束 (1拍后)</text>
+  <text x="1113.03585" y="792.27689" class="sub-text" font-family="'Times New Roman', SimSun, serif" fill="#000000" font-weight="normal" font-size="14px" text-anchor="middle" id="svg_75">done = 1</text>
+  <g id="svg_110">
+   <circle cx="699.29823" cy="415.87719" r="8" fill="none" stroke="#000000" stroke-width="1.5" id="svg_30"/>
+   <circle cx="699.29823" cy="415.87719" r="4" fill="#000000" id="svg_31"/>
+  </g>
+  <g id="svg_111">
+   <circle cx="1074.43936" cy="788.06636" r="8" fill="none" stroke="#000000" stroke-width="1.5" id="svg_71"/>
+   <circle cx="1074.43936" cy="788.06636" r="4" fill="#000000" id="svg_72"/>
+  </g>
+  <g id="svg_112">
+   <rect x="880.1907" y="770.43249" width="110" height="36" class="sub-state" fill="#eaf2f8" stroke="#5a98d3" stroke-width="1.5" rx="12" ry="12" id="svg_69"/>
+   <text x="938.08925" y="793.43249" class="main-text" font-family="'Times New Roman', SimSun, serif" fill="#000000" font-weight="normal" font-size="15px" text-anchor="middle" id="svg_70">OutputDone</text>
+  </g>
+ </g>
+</svg>

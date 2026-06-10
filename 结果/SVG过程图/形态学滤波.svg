@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="100%" height="100%" style="background-color: #ffffff;">
+    <defs>
+        <pattern id="bg-grid" width="20" height="20" patternUnits="userSpaceOnUse">
+            <rect width="20" height="20" fill="none" stroke="#e0e0e0" stroke-width="1"/>
+        </pattern>
+        
+        <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#2b5797"/>
+        </marker>
+
+        <g id="pixel-grid">
+            <rect width="180" height="180" fill="url(#bg-grid)" stroke="#333" stroke-width="1.5"/>
+        </g>
+
+        <g id="shape-a-input">
+            <use href="#pixel-grid"/>
+            <rect x="60" y="60" width="60" height="60" fill="#0a2558"/>
+            <rect x="80" y="40" width="20" height="20" fill="#0a2558"/>
+            <rect x="80" y="120" width="20" height="20" fill="#0a2558"/>
+            <rect x="40" y="80" width="20" height="20" fill="#0a2558"/>
+            <rect x="120" y="80" width="20" height="20" fill="#0a2558"/>
+            <rect x="20" y="20" width="20" height="20" fill="#0a2558"/> <rect x="140" y="140" width="20" height="20" fill="#0a2558"/> </g>
+        
+        <g id="shape-a-eroded">
+            <use href="#pixel-grid"/>
+            <rect x="80" y="80" width="20" height="20" fill="#0a2558"/>
+        </g>
+
+        <g id="shape-a-opened">
+            <use href="#pixel-grid"/>
+            <rect x="60" y="60" width="60" height="60" fill="#0a2558"/>
+        </g>
+
+        <g id="shape-b-input">
+            <use href="#pixel-grid"/>
+            <path fill-rule="evenodd" d="M 40 40 h 100 v 100 h -100 Z M 60 60 h 20 v 20 h -20 Z M 100 100 h 20 v 20 h -20 Z M 120 60 h 20 v 20 h -20 Z" fill="#0a2558"/>
+        </g>
+
+        <g id="shape-b-dilated">
+            <use href="#pixel-grid"/>
+            <rect x="20" y="20" width="140" height="140" fill="#0a2558"/>
+        </g>
+
+        <g id="shape-b-closed">
+            <use href="#pixel-grid"/>
+            <rect x="40" y="40" width="100" height="100" fill="#0a2558"/>
+        </g>
+    </defs>
+
+    <style>
+        text { font-family: 'Times New Roman', SimSun, serif; fill: #000000; font-weight: normal; }
+        .title { font-size: 26px; text-anchor: middle; }
+        .subtitle { font-size: 22px; text-anchor: middle; }
+        .label { font-size: 18px; text-anchor: middle; }
+        .arrow-text { font-size: 16px; text-anchor: middle; fill: #212529; }
+        .desc-text { font-size: 17px; text-anchor: middle; fill: #000000; }
+        .line-border { stroke: #d3d3d3; stroke-width: 1.5; fill: none; }
+    </style>
+
+    <text x="800" y="50" class="title">数学形态学：核心操作与滤波示意图</text>
+    
+    <line x1="40" y1="460" x2="1560" y2="460" class="line-border" stroke-dasharray="8,4" />
+    
+    <line x1="800" y1="120" x2="800" y2="440" class="line-border" />
+    <line x1="800" y1="520" x2="800" y2="880" class="line-border" />
+
+    <text x="800" y="100" class="subtitle">基本运算</text>
+
+    <text x="400" y="140" class="subtitle">腐蚀 (Erosion)</text>
+    
+    <use href="#shape-a-input" x="140" y="180"/>
+    <text x="230" y="165" class="label">输入图像</text>
+
+    <line x1="340" y1="270" x2="480" y2="270" stroke="#2b5797" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="410" y="255" class="arrow-text">SE探针滑动</text>
+    <text x="410" y="295" class="arrow-text">保留完全包含像素</text>
+
+    <use href="#shape-a-eroded" x="500" y="180"/>
+    <text x="590" y="165" class="label">腐蚀后</text>
+
+    <rect x="140" y="390" width="540" height="36" rx="5" ry="5" fill="#f8f9fa" stroke="#adb5bd" stroke-width="1"/>
+    <text x="410" y="414" class="desc-text">收缩目标边界，去除小噪声和孤立点</text>
+
+
+    <text x="1200" y="140" class="subtitle">膨胀 (Dilation)</text>
+    
+    <use href="#shape-b-input" x="920" y="180"/>
+    <text x="1010" y="165" class="label">输入图像</text>
+
+    <line x1="1120" y1="270" x2="1260" y2="270" stroke="#2b5797" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="1190" y="255" class="arrow-text">SE探针滑动</text>
+    <text x="1190" y="295" class="arrow-text">扩张前景区域</text>
+
+    <use href="#shape-b-dilated" x="1280" y="180"/>
+    <text x="1370" y="165" class="label">膨胀后</text>
+
+    <rect x="920" y="390" width="540" height="36" rx="5" ry="5" fill="#f8f9fa" stroke="#adb5bd" stroke-width="1"/>
+    <text x="1190" y="414" class="desc-text">扩张前景区域，填充小孔隙并连接断裂部分</text>
+
+
+    <text x="800" y="500" class="subtitle">复合运算 (滤波器)</text>
+
+    <text x="400" y="550" class="subtitle">开运算 = 先腐蚀后膨胀</text>
+    
+    <use href="#shape-a-input" x="70" y="600"/>
+    <text x="160" y="805" class="label">输入图像</text>
+
+    <line x1="260" y1="690" x2="310" y2="690" stroke="#2b5797" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="285" y="675" class="arrow-text">1. 腐蚀</text>
+    <text x="285" y="715" class="arrow-text">(去除小噪声)</text>
+
+    <use href="#shape-a-eroded" x="330" y="600"/>
+    <text x="420" y="805" class="label">腐蚀结果</text>
+    <text x="420" y="825" class="arrow-text">目标缩小</text>
+
+    <line x1="530" y1="690" x2="580" y2="690" stroke="#2b5797" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="555" y="675" class="arrow-text">2. 膨胀</text>
+    <text x="555" y="715" class="arrow-text">(恢复形状)</text>
+
+    <use href="#shape-a-opened" x="600" y="600"/>
+    <text x="690" y="805" class="label">膨胀结果</text>
+    <text x="690" y="825" class="arrow-text">(最终结果)</text>
+
+    <rect x="70" y="850" width="710" height="36" rx="5" ry="5" fill="#f8f9fa" stroke="#adb5bd" stroke-width="1"/>
+    <text x="425" y="874" class="desc-text">有效去除孤立噪声点和小物体，保持较大物体原始形状并平滑边界。</text>
+
+
+    <text x="1200" y="550" class="subtitle">闭运算 = 先膨胀后腐蚀</text>
+
+    <use href="#shape-b-input" x="850" y="600"/>
+    <text x="940" y="805" class="label">输入图像</text>
+
+    <line x1="1040" y1="690" x2="1090" y2="690" stroke="#2b5797" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="1065" y="675" class="arrow-text">1. 膨胀</text>
+    <text x="1065" y="715" class="arrow-text">(填充孔洞)</text>
+
+    <use href="#shape-b-dilated" x="1110" y="600"/>
+    <text x="1200" y="805" class="label">膨胀结果</text>
+    <text x="1200" y="825" class="arrow-text">目标扩大</text>
+
+    <line x1="1310" y1="690" x2="1360" y2="690" stroke="#2b5797" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="1335" y="675" class="arrow-text">2. 腐蚀</text>
+    <text x="1335" y="715" class="arrow-text">(平滑边界)</text>
+
+    <use href="#shape-b-closed" x="1380" y="600"/>
+    <text x="1470" y="805" class="label">腐蚀结果</text>
+    <text x="1470" y="825" class="arrow-text">(最终结果)</text>
+
+    <rect x="850" y="850" width="710" height="36" rx="5" ry="5" fill="#f8f9fa" stroke="#adb5bd" stroke-width="1"/>
+    <text x="1205" y="874" class="desc-text">有效填充目标内部小孔洞和断裂缺口，平滑外部边界轮廓。</text>
+
+</svg>

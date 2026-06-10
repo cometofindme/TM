@@ -1,0 +1,60 @@
+<svg width="1600" height="900" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <marker orient="auto-start-reverse" markerHeight="6" markerWidth="6" refY="5" refX="9" viewBox="0 0 10 10" id="arrow">
+   <path id="svg_1" fill="#495057" d="m0,0l10,5l-10,5l0,-10z"/>
+  </marker>
+  <marker orient="auto-start-reverse" markerHeight="6" markerWidth="6" refY="5" refX="9" viewBox="0 0 10 10" id="bus-arrow">
+   <path id="svg_2" fill="#0d6efd" d="m0,0l10,5l-10,5l0,-10z"/>
+  </marker>
+ </defs>
+ <g>
+  <title>Layer 1</title>
+  <rect id="svg_3" fill="#FFFFFF" height="900" width="1600" class="bg"/>
+  <rect id="svg_4" ry="15" rx="15" stroke-width="3" stroke="#b8daff" fill="#f0f4f8" height="300" width="1500" y="50" x="50" class="domain-box domain-pc"/>
+  <text id="svg_5" text-anchor="middle" fill="#212529" font-weight="bold" font-size="28px" font-family="'Times New Roman', 'SimSun', serif" y="100" x="800" class="domain-title">PC端离线预处理域</text>
+  <rect id="svg_6" ry="8" rx="8" stroke-width="2" stroke="#adb5bd" fill="#ffffff" height="120" width="220" y="150" x="120" class="node"/>
+  <text id="svg_7" font-weight="bold" alignment-baseline="middle" text-anchor="middle" fill="#212529" font-size="22px" font-family="'Times New Roman', 'SimSun', serif" y="195" x="230" class="text-main text-bold">原始无人机射频</text>
+  <text id="svg_8" alignment-baseline="middle" text-anchor="middle" fill="#212529" font-size="22px" font-family="'Times New Roman', 'SimSun', serif" y="235" x="230" class="text-main">信号 I/Q 数据</text>
+  <rect id="svg_9" ry="8" rx="8" stroke-width="2" stroke="#0d6efd" fill="#e7f1ff" height="120" width="460" y="150" x="480" class="node node-blue"/>
+  <text id="svg_10" font-weight="bold" alignment-baseline="middle" text-anchor="middle" fill="#212529" font-size="22px" font-family="'Times New Roman', 'SimSun', serif" y="195" x="710" class="text-main text-bold">MATLAB 预处理</text>
+  <text id="svg_11" alignment-baseline="middle" text-anchor="middle" fill="#495057" font-size="18px" font-family="'Times New Roman', 'SimSun', serif" y="235" x="710" class="text-sub">STFT、形态学处理、时频压缩</text>
+  <rect id="svg_12" ry="8" rx="8" stroke-width="2" stroke="#adb5bd" fill="#ffffff" height="120" width="260" y="150" x="1080" class="node"/>
+  <text id="svg_13" font-weight="bold" alignment-baseline="middle" text-anchor="middle" fill="#212529" font-size="22px" font-family="'Times New Roman', 'SimSun', serif" y="195" x="1210" class="text-main text-bold">128bit</text>
+  <text id="svg_14" alignment-baseline="middle" text-anchor="middle" fill="#212529" font-size="22px" font-family="'Times New Roman', 'SimSun', serif" y="235" x="1210" class="text-main">布尔向量特征文件</text>
+  <path id="svg_15" marker-end="url(#arrow)" fill="none" stroke-width="3" stroke="#495057" d="m340,210l130,0" class="line-solid"/>
+  <path id="svg_16" marker-end="url(#arrow)" fill="none" stroke-width="3" stroke="#495057" d="m940,210l130,0" class="line-solid"/>
+  <path id="svg_17" marker-end="url(#arrow)" fill="none" stroke-width="3" stroke="#495057" d="m1210,270l0,110l-860,0l0,100" class="line-solid"/>
+  <rect id="svg_18" ry="5" rx="5" height="40" width="180" y="360" x="700" fill="#ffffff"/>
+  <text id="svg_19" alignment-baseline="middle" text-anchor="middle" fill="#495057" font-size="18px" font-family="'Times New Roman', 'SimSun', serif" y="386" x="790" class="text-sub">下发布尔特征文件</text>
+  <rect id="svg_20" ry="15" rx="15" stroke-width="3" stroke="#ffeeba" fill="#fdf8f3" height="410" width="460" y="440" x="50" class="domain-box domain-ps"/>
+  <text id="svg_21" text-anchor="middle" fill="#212529" font-weight="bold" font-size="28px" font-family="'Times New Roman', 'SimSun', serif" y="490" x="280" class="domain-title">PS端数据加载与调度域</text>
+  <text id="svg_22" alignment-baseline="middle" text-anchor="middle" fill="#495057" font-size="18px" font-family="'Times New Roman', 'SimSun', serif" y="525" x="280" class="text-sub">(Zynq-7020 开发板)</text>
+  <rect id="svg_23" ry="8" rx="8" stroke-width="2" stroke="#ffc107" fill="#fff3cd" height="100" width="300" y="560" x="130" class="node node-orange"/>
+  <text id="svg_24" font-weight="bold" alignment-baseline="middle" text-anchor="middle" fill="#212529" font-size="22px" font-family="'Times New Roman', 'SimSun', serif" y="600" x="280" class="text-main text-bold">ARM 处理器 (PS)</text>
+  <text id="svg_25" alignment-baseline="middle" text-anchor="middle" fill="#495057" font-size="18px" font-family="'Times New Roman', 'SimSun', serif" y="635" x="280" class="text-sub">读取特征文件与任务调度</text>
+  <rect id="svg_26" ry="8" rx="8" stroke-width="2" stroke="#adb5bd" fill="#ffffff" height="100" width="300" y="700" x="130" class="node"/>
+  <text id="svg_27" alignment-baseline="middle" text-anchor="middle" fill="#212529" font-size="22px" font-family="'Times New Roman', 'SimSun', serif" y="740" x="280" class="text-main">通过 AXI4-Lite</text>
+  <text id="svg_28" alignment-baseline="middle" text-anchor="middle" fill="#212529" font-size="22px" font-family="'Times New Roman', 'SimSun', serif" y="775" x="280" class="text-main">总线下发/接收数据</text>
+  <path id="svg_29" marker-end="url(#arrow)" fill="none" stroke-width="3" stroke="#495057" d="m280,660l0,30" class="line-solid"/>
+  <path id="svg_30" marker-end="url(#bus-arrow)" fill="none" stroke-width="5" stroke="#0d6efd" d="m430,730l240,0" class="line-bus-single"/>
+  <text id="svg_31" alignment-baseline="middle" text-anchor="middle" font-size="18px" font-family="'Times New Roman', 'SimSun', serif" y="715" x="575.00001" fill="#495057" class="text-sub">特征数据下发</text>
+  <path id="svg_32" marker-end="url(#arrow)" fill="none" stroke-width="5" stroke="#0d6efd" d="m670,770l-230,0"/>
+  <text id="svg_33" alignment-baseline="middle" text-anchor="middle" font-size="18px" font-family="'Times New Roman', 'SimSun', serif" y="795" x="575.00001" fill="#495057" class="text-sub">分类结果反馈</text>
+  <text stroke="null" id="svg_34" font-weight="bold" y="755" x="524.99999" fill="#0d6efd" class="text-bold">AXI4-Lite 总线</text>
+  <rect id="svg_35" ry="15" rx="15" stroke-width="3" stroke="#c3e6cb" fill="#f1f8f5" height="410" width="870" y="440" x="680" class="domain-box domain-pl"/>
+  <text id="svg_36" text-anchor="middle" fill="#212529" font-weight="bold" font-size="28px" font-family="'Times New Roman', 'SimSun', serif" y="490" x="1115" class="domain-title">PL端硬件加速域 (FPGA)</text>
+  <rect id="svg_37" ry="8" rx="8" stroke-width="2" stroke="#adb5bd" stroke-dasharray="10,5" fill="#ffffff" height="290" width="790" y="530" x="720" class="node"/>
+  <text id="svg_38" font-weight="bold" alignment-baseline="middle" text-anchor="middle" font-size="22px" font-family="'Times New Roman', 'SimSun', serif" y="565" x="1115" fill="#212529" class="text-main text-bold">Tsetlin Machine 模型 IP 核</text>
+  <rect id="svg_39" ry="8" rx="8" stroke-width="2" stroke="#198754" fill="#d1e7dd" height="130" width="200" y="630" x="760" class="node node-green"/>
+  <text id="svg_40" font-weight="bold" alignment-baseline="middle" text-anchor="middle" fill="#212529" font-size="22px" font-family="'Times New Roman', 'SimSun', serif" y="680" x="860" class="text-main text-bold">BRAM 存储器</text>
+  <text id="svg_41" alignment-baseline="middle" text-anchor="middle" fill="#495057" font-size="18px" font-family="'Times New Roman', 'SimSun', serif" y="720" x="860" class="text-sub">加载/缓存掩码文件</text>
+  <rect id="svg_42" ry="8" rx="8" stroke-width="2" stroke="#198754" fill="#d1e7dd" height="130" width="220" y="630" x="1020" class="node node-green"/>
+  <text id="svg_43" font-weight="bold" alignment-baseline="middle" text-anchor="middle" fill="#212529" font-size="22px" font-family="'Times New Roman', 'SimSun', serif" y="680" x="1130" class="text-main text-bold">布尔逻辑运算</text>
+  <text id="svg_44" alignment-baseline="middle" text-anchor="middle" fill="#495057" font-size="18px" font-family="'Times New Roman', 'SimSun', serif" y="720" x="1130" class="text-sub">并行子句匹配加速</text>
+  <rect id="svg_45" ry="8" rx="8" stroke-width="2" stroke="#198754" fill="#d1e7dd" height="130" width="180" y="630" x="1290" class="node node-green"/>
+  <text id="svg_46" font-weight="bold" alignment-baseline="middle" text-anchor="middle" fill="#212529" font-size="22px" font-family="'Times New Roman', 'SimSun', serif" y="680" x="1380" class="text-main text-bold">多类别</text>
+  <text id="svg_47" alignment-baseline="middle" text-anchor="middle" fill="#212529" font-size="22px" font-family="'Times New Roman', 'SimSun', serif" y="720" x="1380" class="text-main">得分计算</text>
+  <path id="svg_48" marker-end="url(#arrow)" fill="none" stroke-width="3" stroke="#495057" d="m960,695l50,0" class="line-solid"/>
+  <path id="svg_49" marker-end="url(#arrow)" fill="none" stroke-width="3" stroke="#495057" d="m1240,695l40,0" class="line-solid"/>
+ </g>
+</svg>

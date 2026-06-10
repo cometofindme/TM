@@ -1,0 +1,129 @@
+function step1_prepare_64x64_dataset()
+    %生成的64/64图像
+    clear; clc; close all;
+    
+    % =========================================================
+    % ★ 配置路径
+    % =========================================================
+    data_root   = 'F:\DroneRFa丨用于侦测低空无人机的大规模无人机射频信号数据集\DroneRFa\DroneRFa\用于训练的数据集第二版';
+    % 直接保存 64x64 图像矩阵的新数据集路径
+    output_path = 'E:\tm_Dronfa_xy\TM_Images_64x64_50ms_v7_backgruand.mat';
+    
+    file_list = dir(fullfile(data_root, 'T0000*.mat'));
+    num_files = length(file_list);
+    fprintf('【Step 1】开始批量生成并直接存储 64x64 二维图像数据集...\n');
+
+    % =========================================================
+    % ★ 参数设置 (完全同步你的 demo 代码)
+    % =========================================================
+    fs_orig = 100e6;
+    win_ms  = 50; 
+    samples_per_win = floor((win_ms / 1000) * fs_orig);
+    img_size = 64; 
+    max_wins_per_file = 80;
+
+    % 预定义形态学结构元素
+    SE_close = strel('rectangle', [10, 40]);
+    SE_open  = strel('rectangle', [10, 1800]);
+    
+    % 预分配 Cell 数组用于收集数据 (防止动态扩展矩阵导致的卡顿)
+    all_Images_cell = cell(num_files, 1);
+    all_Labels_cell = cell(num_files, 1);
+
+    % =========================================================
+    % ★ 核心提取大循环
+    % =========================================================
+    for f_idx = 1:num_files
+        fname_full = fullfile(data_root, file_list(f_idx).name);
+        fname_str  = file_list(f_idx).name;
+        
+        % --- 标签解析 ---
+        label = -1; 
+        if contains(fname_str, 'T0001'), label = 0;
+        elseif contains(fname_str, 'T0010'), label = 1;
+        elseif contains(fname_str, 'T0011'), label = 2;
+        elseif contains(fname_str, 'T0100'), label = 3; 
+        elseif contains(fname_str, 'T0101'), label = 4;    
+        elseif contains(fname_str, 'T0110'), label = 5;
+        elseif contains(fname_str, 'T0111'), label = 6;
+        elseif contains(fname_str, 'T1000'), label = 7;
+        elseif contains(fname_str, 'T1001'), label = 8;
+        elseif contains(fname_str, 'T0000'), label = 9;    
+%         elseif contains(fname_str, 'T0100'), label = 3;
+        end
+        if label == -1, continue; end
+        
+        fprintf('[%d/%d] 正在处理 %s (Label: %d)...\n', f_idx, num_files, fname_str, label);
+        
+        m = matfile(fname_full);
+        info = whos(m, 'RF0_I');
+        num_wins = floor(info.size(1) / samples_per_win);
+        actual_wins = min(num_wins, max_wins_per_file); 
+        
+        % 局部变量预分配，存储当前文件的 64x64 图像
+        temp_imgs = false(actual_wins, img_size, img_size);
+        valid_win_count = 0;
+        
+        for w = 1:actual_wins
+            start_i = (w-1)*samples_per_win + 1;
+            end_i   = start_i + samples_per_win - 1;
+            
+            % 读取与 STFT
+            I = double(m.RF0_I(start_i:end_i, 1));
+            Q = double(m.RF0_Q(start_i:end_i, 1));
+            sig = (I-mean(I)) + 1j*(Q-mean(Q));
+            
+            win_len = 256; overlap = 192; nfft = 1024;
+            [S, ~, ~] = spectrogram(sig, hamming(win_len), overlap, nfft, fs_orig);
+            S = fftshift(S, 1);
+            S = S - mean(S, 2);
+            P_db = 20*log10(abs(S) + 1e-10);
+            
+            % 动态阈值二值化
+            sample_idx = randperm(numel(P_db), min(100000, numel(P_db)));
+            thresh = prctile(P_db(sample_idx), 97); 
+            bin_raw = P_db > thresh; 
+            
+            % 形态学清洗
+            bin_clean = bwareaopen(bin_raw, 30);
+            bin_clean = imclose(bin_clean, SE_close);
+            bin_clean = imopen(bin_clean, SE_open);
+            
+            % 只要全黑就跳过
+            if sum(bin_clean(:)) == 0
+                clear I Q sig S P_db bin_raw bin_clean; continue; 
+            end
+            
+            % 缩放为 64x64
+            img_64 = imresize(bin_clean, [img_size, img_size], 'nearest');
+            
+            % 存入临时数组
+            valid_win_count = valid_win_count + 1;
+            temp_imgs(valid_win_count, :, :) = img_64;
+            
+            % 内存释放
+            clear I Q sig S P_db bin_raw bin_clean img_64; 
+        end
+        
+        if valid_win_count > 0
+            % 只保留有效的窗口数据
+            all_Images_cell{f_idx} = temp_imgs(1:valid_win_count, :, :);
+            all_Labels_cell{f_idx} = ones(valid_win_count, 1) * label;
+        end
+        clear temp_imgs m; 
+    end
+
+    % =========================================================
+    % ★ 合并并保存
+    % =========================================================
+    fprintf('特征提取结束，正在合并矩阵...\n');
+    valid_idx = ~cellfun(@isempty, all_Images_cell);
+    
+    all_Images = cat(1, all_Images_cell{valid_idx});
+    all_Labels = cat(1, all_Labels_cell{valid_idx});
+
+    % 保存时指定 -v7 以完美兼容 Python 的 scipy.io
+    save(output_path, 'all_Images', 'all_Labels', '-v7');
+    fprintf('直出 64x64 图像数据集制作完成！\n');
+    fprintf('-> 图像矩阵大小: %d x %d x %d\n', size(all_Images, 1), size(all_Images, 2), size(all_Images, 3));
+end
